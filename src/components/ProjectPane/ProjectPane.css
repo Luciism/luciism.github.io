@@ -1,0 +1,77 @@
+.project-pane {
+  background-color: var(--secondary);
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  border-radius: 6px;
+  overflow: hidden;
+  cursor: pointer;
+
+  transition: transform 0.6s ease-in-out;
+}
+
+.project-pane:hover {
+  transform: scale(1.02);
+}
+
+.project-pane .project-thumbnail-wrapper {
+  width: 100%;
+  height: 65%;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.project-pane .project-thumbnail-wrapper img {
+  min-width: 100%;
+  min-height: 100%;
+  transition: transform 0.6s ease-in-out;
+}
+
+.project-pane:hover .project-thumbnail-wrapper img {
+  transform: scale(1.04);
+}
+
+.project-pane .project-details {
+  padding: 15px 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-grow: 1;
+}
+
+.project-pane .project-details .project-title,
+.project-pane .project-details .project-description,
+.project-pane .project-details .project-tags .project-tag {
+  color: var(--text);
+  margin: 0;
+  padding: 0;
+}
+
+.project-pane .project-details .project-title {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.project-pane .project-details .project-description {
+  font-size: 18px;
+}
+
+.project-pane .project-details .project-tags {
+  display: flex;
+  align-items: center;
+}
+
+.project-pane .project-details .project-tags > *:not(:first-child) {
+  margin-left: 8px;
+}
+
+.project-pane .project-details .project-tags .project-tag {
+  padding: 4px 12px;
+  background-color: rgba(255, 255, 255, 0.05);
+  font-weight: 300;
+  font-size: 14px;
+  border-radius: 15px;
+}
