@@ -1,3 +1,4 @@
+import BackToTopBtn from 'components/BackToTopBtn/BackToTopBtn';
 import Navbar from './components/Navbar/Navbar';
 import Home from "./pages/Home/Home";
 import { useEffect } from 'react';
@@ -22,6 +23,7 @@ function App() {
             {/* <Route exact path="*" element={<NotFound />} /> */}
           </Routes>
         </div>
+        <BackToTopBtn />
       </div>
     </Router>
   );
