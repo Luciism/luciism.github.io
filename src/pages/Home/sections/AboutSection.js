@@ -1,5 +1,29 @@
 import "./AboutSection.css";
 
+const SkillSet = ({ title, skills }) => {
+  return (
+    <div className="about-section" data-aos="fade-up">
+      <h3>{title}</h3>
+
+      <div className="skill-list">
+        {skills.map((skill, index) => (
+          <li key={index}>{skill}</li>
+        ))}
+      </div>
+    </div>
+  );
+};
+
+const AboutText = ({ title, content }) => {
+  return (
+    <div className="about-section" data-aos="fade-up">
+      <h3>{title}</h3>
+
+      <p style={{ whiteSpace: "pre-line" }}>{content}</p>
+    </div>
+  );
+};
+
 const AboutSection = () => {
   return (
     <div home-section="about">
@@ -7,36 +31,30 @@ const AboutSection = () => {
         <h2 data-aos="fade-up">About</h2>
 
         <div className="about-sections-container">
-          <div className="about-section" data-aos="fade-up">
-            <h3>Background</h3>
+          <AboutText
+            title="Background"
+            content={
+              "I grew up as a slave in china, it was hard for me tomake an honest " +
+              "living for my and my family working hard in a sweat shop for $0.01 " +
+              "an hour.\n\nI have always been fascinated by the world of technolog" +
+              "y and was always wondering how things work, it seemed like magic. I" +
+              " started programming in my free time by carving symbols into rocks " +
+              "in the cave that I lived in."
+            }
+          />
 
-            <p>
-              I grew up as a slave in china, it was hard for me to make an
-              honest living for my and my family working hard in a sweat shop
-              for $0.01 an hour.
-              <br />
-              <br />I have always been fascinated by the world of technology and
-              was always wondering how things work, it seemed like magic. I
-              started programming in my free time by carving symbols into rocks
-              in the cave that I lived in.
-            </p>
-          </div>
-
-          <div className="about-section" data-aos="fade-up">
-            <h3>Lorem, ipsum.</h3>
-
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat
-              omnis asperiores aperiam fuga, voluptas ullam nobis dignissimos
-              placeat corrupti nihil? Odio, neque.
-              <br />
-              <br />
-              Nulla recusandae minima ratione ullam blanditiis eveniet quam
-              error reiciendis molestias repudiandae! Voluptatibus similique sed
-              deserunt soluta esse. Reprehenderit omnis consequatur beatae
-              laborum, nesciunt iure accusamus cupiditate ratione.
-            </p>
-          </div>
+          <AboutText
+            title="Lorem, ipsum."
+            content={
+              "Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat omn" +
+              "is asperiores aperiam fuga, voluptas ullam nobis dignissimos placea" +
+              "t corrupti nihil? Odio, neque.\n\nNulla recusandae minima ratione u" +
+              "llam blanditiis eveniet quam error reiciendis molestias repudiandae" +
+              "! Voluptatibus similique sed deserunt soluta esse. Reprehenderit om" +
+              "nis consequatur beatae laborum, nesciunt iure accusamus cupiditate " +
+              "ratione."
+            }
+          />
         </div>
       </div>
 
@@ -44,44 +62,29 @@ const AboutSection = () => {
         <h2 data-aos="fade-up">Skills</h2>
 
         <div className="about-sections-container">
-          <div className="about-section" data-aos="fade-up">
-            <h3>Languages</h3>
+          <SkillSet
+            title="Languages"
+            skills={["Python", "Javascript", "Java", "HTML", "CSS", "SQL"]}
+          />
 
-            <div className="skill-list">
-              <li>Python</li>
-              <li>Javascript</li>
-              <li>Java</li>
-              <li>HTML</li>
-              <li>CSS</li>
-              <li>SQL</li>
-            </div>
-          </div>
+          <SkillSet
+            title="Frameworks"
+            skills={["React", "Node", "Flask", "Quart"]}
+          />
 
-          <div className="about-section" data-aos="fade-up">
-            <h3>Frameworks</h3>
-
-            <div className="skill-list">
-              <li>React</li>
-              <li>Node</li>
-              <li>Flask</li>
-              <li>Quart</li>
-            </div>
-          </div>
-
-          <div className="about-section" data-aos="fade-up">
-            <h3>Tools</h3>
-
-            <div className="skill-list">
-              <li>Git & Github</li>
-              <li>Bash</li>
-              <li>PostgreSQL</li>
-              <li>Sqlite3</li>
-              <li>Devtools</li>
-              <li>Figma</li>
-              <li>VSCode</li>
-              <li>IntelliJ IDEA</li>
-            </div>
-          </div>
+          <SkillSet
+            title="Tools"
+            skills={[
+              "Git & Github",
+              "Bash",
+              "PostgreSQL",
+              "Sqlite3",
+              "Devtools",
+              "Figma",
+              "VSCode",
+              "IntelliJ IDEA",
+            ]}
+          />
         </div>
       </div>
     </div>

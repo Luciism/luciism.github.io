@@ -13,7 +13,7 @@ function range(start, end) {
   return numbers
 }
 
-const ProjectsSection = forwardRef((props, ref) => {
+const ProjectsSection = forwardRef((_, ref) => {
   return (
     <div home-section="projects" ref={ref}>
       <div>
@@ -24,7 +24,7 @@ const ProjectsSection = forwardRef((props, ref) => {
         <div className="project-panes-container">
           {range(0, 6).map((i) => {
             return (
-              <div data-aos="fade-right" data-aos-delay={i * 100}>
+              <div data-aos="fade-right" data-aos-delay={i * 100} key={i}>
                 <ProjectPane
                   projectData={{
                     thumbnail_url:
