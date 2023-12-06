@@ -33,6 +33,7 @@ export default function Navbar() {
 
   return (
     <div className="navbar" data-aos="fade-down">
+      <div className="navbar-blur"></div>
       <div className="navigation-container-wrapper" ref={navWrapperRef}>
         <div className="navigation-container">
           <div className="navlinks-container">
