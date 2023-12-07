@@ -17,50 +17,8 @@
   padding: 0;
 }
 
-.home [home-section="about"] .about-container .about-section {
+.home [home-section="about"] .about-container .info-container {
   margin-top: 50px;
-}
-
-.home [home-section="about"] .about-container .about-section h3 {
-  color: var(--primary);
-  font-size: 38px;
-  margin: 0;
-  padding: 0;
-}
-
-/* skills */
-.home
-  [home-section="about"]
-  .about-container.skills
-  .about-section
-  .skill-list {
-  display: flex;
-  flex-wrap: wrap;
-  width: 90%;
-  margin-left: -5px; /* accounts for outer margin on the list items */
-}
-
-.home
-  [home-section="about"]
-  .about-container.skills
-  .about-section
-  .skill-list
-  li {
-  list-style: none;
-  color: var(--text);
-  padding: 6px 16px;
-  background-color: var(--secondary);
-  border-radius: 5px;
-  font-size: 26px;
-  margin: 5px;
-}
-
-/* about */
-.home [home-section="about"] .about-container.about .about-section p {
-  color: var(--text);
-  font-size: 18px;
-  margin: 0;
-  padding: 0;
 }
 
 @media (width < 1650px) {
@@ -88,7 +46,7 @@
   .home
     [home-section="about"]
     .about-container.skills
-    .about-section
+    .info-container
     .skill-list {
     width: 100%;
   }
