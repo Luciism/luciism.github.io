@@ -76,17 +76,19 @@ const ProjectPage = ({ projectData }) => {
             />
           </div>
 
-          <div data-aos="fade-up">
+          <div data-aos="fade-right">
             <SkillSet title="Tools Used" skills={projectData.tools} />
           </div>
         </div>
-        <p
-          onClick={handleBackBtnClick}
-          className="padded-button background-gradient-linear back-btn"
-        >
-          <Icon icon="ph:arrow-left-bold" />
-          <span>Back</span>
-        </p>
+        <div data-aos="flip-up">
+          <p
+            onClick={handleBackBtnClick}
+            className="padded-button background-gradient-linear back-btn"
+          >
+            <Icon icon="ph:arrow-left-bold" />
+            <span>Back</span>
+          </p>
+        </div>
       </div>
     </div>
   );

@@ -3,7 +3,9 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-bottom: 100px;
+  padding-bottom: 50px;
+  width: 60%;
+  align-self: center;
 }
 
 .project-page .project-intro {
@@ -36,7 +38,6 @@
 .project-page .project-intro .project-description-txt {
   color: var(--text-secondary);
   font-size: 24px;
-  max-width: 60%;
   margin-top: 10px;
 }
 
@@ -74,11 +75,6 @@
 
 .project-page .project-intro .project-btns a:nth-child(2):hover {
   transform: scale(1.08) translateY(-12px) rotate(2deg);
-}
-
-/* project images */
-.project-page .project-content {
-  width: 60%;
 }
 
 .project-page .project-images-wrapper {
@@ -129,4 +125,17 @@ html[data-scroll="0"] .project-page .project-images-wrapper {
 
 .project-page .back-btn:hover {
   transform: scale(1.03);
+}
+
+/* responsive */
+@media (width < 1000px) {
+  .project-page {
+    width: 80%;
+  }
+}
+
+@media (width < 600px) {
+  .project-page {
+    width: 90%;
+  }
 }

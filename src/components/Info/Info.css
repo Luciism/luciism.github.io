@@ -13,7 +13,7 @@
 .info-container .skill-list {
   display: flex;
   flex-wrap: wrap;
-  width: 90%;
+  width: 100%;
   margin-left: -5px; /* accounts for outer margin on the list items */
 }
 
