@@ -6,14 +6,20 @@ const BackToTopBtn = () => {
   const backToTopBtnRef = useRef();
   
   useEffect(() => {
-    window.addEventListener("scroll", () => {
+    const handleScroll = () => {
       // show if at least 200px down the page
       if (document.documentElement.scrollTop > 200) {
         backToTopBtnRef.current.classList.add("show");
       } else {
         backToTopBtnRef.current.classList.remove("show");
       }
-    });
+    }
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    }
   }, [backToTopBtnRef]);
 
   const handleBackToTopBtnClick = () => {
