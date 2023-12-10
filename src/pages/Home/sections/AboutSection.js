@@ -1,10 +1,12 @@
 import "./AboutSection.css";
 import InfoText from "components/Info/InfoText";
 import SkillSet from "components/Info/SkillSet";
+import { forwardRef } from "react";
 
-const AboutSection = () => {
+
+const AboutSection = forwardRef((_, ref) => {
   return (
-    <div home-section="about">
+    <div home-section="about" ref={ref}>
       <div className="about-container about">
         <h2 data-aos="fade-up">About</h2>
 
@@ -78,6 +80,6 @@ const AboutSection = () => {
       </div>
     </div>
   );
-};
+});
 
 export default AboutSection;

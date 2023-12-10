@@ -2,7 +2,6 @@ import BackToTopBtn from 'components/BackToTopBtn/BackToTopBtn';
 import Navbar from './components/Navbar/Navbar';
 import Home from "./pages/Home/Home";
 import ProjectPage from 'pages/ProjectPage/ProjectPage';
-import ScrollToTop from 'ScrollToTop';
 import { useEffect } from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import AOS from "aos";
@@ -30,12 +29,14 @@ function App() {
 
   return (
     <Router>
-      <ScrollToTop />
       <div className="App">
         <Navbar />
         <div className="content">
           <Routes>
-            <Route exact path="/" element={<Home />} />
+            {["/", "/projects", "/about"].map((path, index) => (
+              <Route exact path={path} element={<Home />} key={index} />
+            ))}
+
             <Route
               exact
               path="/projects/test"
@@ -59,8 +60,14 @@ function App() {
                       "https://media.discordapp.net/attachments/1027817138095915068/1182455834907783260/image.png?ex=6584c2d0&is=65724dd0&hm=d4d9e4f3dd031113bb4f99c3714bd5cf0b4f1a162ea97ffa0741eecf3f2d5ac6&=&format=webp&quality=lossless",
                     ],
                     tools: [
-                      "Python", "Javascript", "HTML", "CSS", "Sqlite3", "Flask", "PIL"
-                    ]
+                      "Python",
+                      "Javascript",
+                      "HTML",
+                      "CSS",
+                      "Sqlite3",
+                      "Flask",
+                      "PIL",
+                    ],
                   }}
                 />
               }
@@ -75,6 +82,9 @@ function App() {
 }
 
 export default App;
+
+
+
 
 
 

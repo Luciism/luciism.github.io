@@ -41,10 +41,22 @@ export default function Navbar() {
               <Icon className="icon" icon="ic:round-home" />
               Home
             </Link>
+
+            <Link to="/about">
+              <Icon className="icon" icon="mingcute:user-info-fill" />
+              About
+            </Link>
+
+            <Link to="/projects">
+              <Icon className="icon" icon="fluent:window-dev-edit-20-filled" />
+              Projects
+            </Link>
+
             <Link to="/contact">
               <Icon className="icon" icon="tabler:message" />
               Contact
             </Link>
+
             <a
               href="https://github.com/Luciism"
               target="_blank"
@@ -53,6 +65,7 @@ export default function Navbar() {
               <Icon className="icon" icon="mdi:github" />
               Github
             </a>
+
             <a
               href="https://discord.com/users/774848780234653726"
               target="_blank"

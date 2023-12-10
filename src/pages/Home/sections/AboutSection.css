@@ -7,6 +7,9 @@
 .home [home-section="about"] .about-container {
   padding: 50px 75px;
   width: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .home [home-section="about"] .about-container h2 {

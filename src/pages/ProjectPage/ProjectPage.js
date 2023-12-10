@@ -1,23 +1,14 @@
 import { Icon } from "@iconify/react";
 import InfoText from "components/Info/InfoText";
 import SkillSet from "components/Info/SkillSet";
-// import { Link } from "react-router-dom";
-import { useNavigate } from 'react-router-dom';
+import { Link } from "react-router-dom";
 import './ProjectPage.css'
+import ScrollToTop from "ScrollToTop";
 
 const ProjectPage = ({ projectData }) => {
-  const navigate = useNavigate(null);
-
-  const handleBackBtnClick = () => {
-    if (window.history.state && window.history.state.idx > 0) {
-      navigate(-1);
-    } else {
-      navigate("/", { replace: true });
-    }
-  }
-  
   return (
     <div className="project-page">
+      <ScrollToTop />
       <div className="project-intro">
         <div className="project-intro-text-container">
           <h1 className="project-title-txt" data-aos="fade-up">
@@ -31,11 +22,7 @@ const ProjectPage = ({ projectData }) => {
             {projectData.description.short}
           </p>
         </div>
-        <div
-          className="project-btns"
-          data-aos="fade-up"
-          data-aos-delay="200"
-        >
+        <div className="project-btns" data-aos="fade-up" data-aos-delay="200">
           <a
             href={projectData.links.website}
             target="_blank"
@@ -80,14 +67,17 @@ const ProjectPage = ({ projectData }) => {
             <SkillSet title="Tools Used" skills={projectData.tools} />
           </div>
         </div>
-        <div data-aos="flip-up">
-          <p
-            onClick={handleBackBtnClick}
-            className="padded-button background-gradient-linear back-btn"
-          >
-            <Icon icon="ph:arrow-left-bold" />
-            <span>Back</span>
-          </p>
+
+        <div data-aos="flip-up" data-aos-offset="30">
+          <Link to="/projects" style={{textDecoration: "none"}}>
+            <p
+              // onClick={handleBackBtnClick}
+              className="padded-button background-gradient-linear back-btn"
+            >
+              <Icon icon="ph:arrow-left-bold" />
+              <span>Back</span>
+            </p>
+          </Link>
         </div>
       </div>
     </div>
