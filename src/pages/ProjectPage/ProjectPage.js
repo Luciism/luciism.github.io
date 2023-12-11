@@ -80,7 +80,6 @@ const ProjectPage = () => {
         <div data-aos="flip-up" data-aos-offset="30">
           <Link to="/projects" style={{textDecoration: "none"}}>
             <p
-              // onClick={handleBackBtnClick}
               className="padded-button background-gradient-linear back-btn"
             >
               <Icon icon="ph:arrow-left-bold" />

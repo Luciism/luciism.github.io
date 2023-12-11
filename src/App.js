@@ -7,6 +7,7 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { DataContext } from './DataContext';
+import NotFound from 'pages/NotFound/NotFound';
 
 
 function App() {
@@ -57,7 +58,7 @@ function App() {
               />
             ))}
 
-            {/* <Route exact path="*" element={<NotFound />} /> */}
+            <Route exact path="*" element={<NotFound />} />
           </Routes>
         </div>
         <BackToTopBtn />

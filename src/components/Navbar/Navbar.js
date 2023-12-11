@@ -32,7 +32,7 @@ export default function Navbar() {
   }, []);
 
   return (
-    <div className="navbar" data-aos="fade-down">
+    <div className="navbar">
       <div className="navbar-blur"></div>
       <div className="navigation-container-wrapper" ref={navWrapperRef}>
         <div className="navigation-container">
@@ -77,13 +77,13 @@ export default function Navbar() {
           </div>
         </div>
       </div>
-      <Link to="/" data-aos="fade-right">
+      <Link to="/" data-aos="fade-up">
         <img src={Logo} alt="logo" className="logo" />
       </Link>
       <Icon
         icon="ri:menu-4-fill"
         className="hamburger-icon"
-        data-aos="fade-left"
+        data-aos="fade-up"
         onClick={handleMenuBtnClick}
         ref={menuBtnRef}
       />
