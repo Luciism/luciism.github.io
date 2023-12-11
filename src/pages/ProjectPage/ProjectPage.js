@@ -4,22 +4,31 @@ import SkillSet from "components/Info/SkillSet";
 import { Link } from "react-router-dom";
 import './ProjectPage.css'
 import ScrollToTop from "ScrollToTop";
+import { useContext } from 'react';
+import { DataContext } from 'DataContext';
+import { useLocation } from "react-router-dom";
 
-const ProjectPage = ({ projectData }) => {
+
+const ProjectPage = () => {
+  const location = useLocation();
+  const appData = useContext(DataContext);
+
+  const projectData = appData.projects[location.pathname];
+
   return (
     <div className="project-page">
       <ScrollToTop />
       <div className="project-intro">
         <div className="project-intro-text-container">
           <h1 className="project-title-txt" data-aos="fade-up">
-            {projectData.title}
+            {projectData.page.title}
           </h1>
           <p
             className="project-description-txt"
             data-aos="fade-up"
             data-aos-delay="100"
           >
-            {projectData.description.short}
+            {projectData.page.description.short}
           </p>
         </div>
         <div className="project-btns" data-aos="fade-up" data-aos-delay="200">
@@ -47,7 +56,7 @@ const ProjectPage = ({ projectData }) => {
       <div className="project-content">
         <div className="project-images-wrapper">
           <div className="project-images">
-            {projectData.images.map((image, i) => (
+            {projectData.page.images.map((image, i) => (
               <div className="project-img-wrapper" key={i}>
                 <img src={image} alt={`project_image_${i}.png`} />
               </div>
@@ -59,12 +68,12 @@ const ProjectPage = ({ projectData }) => {
           <div data-aos="fade-up">
             <InfoText
               title="Overview"
-              textContent={projectData.description.long}
+              textContent={projectData.page.description.long}
             />
           </div>
 
           <div data-aos="fade-right">
-            <SkillSet title="Tools Used" skills={projectData.tools} />
+            <SkillSet title="Tools Used" skills={projectData.page.tools} />
           </div>
         </div>
 

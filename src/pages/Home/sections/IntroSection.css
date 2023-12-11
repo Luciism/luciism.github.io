@@ -4,6 +4,7 @@
   position: relative;
 }
 
+/* scroll down btn */
 @keyframes scroll-down-btn-levitate {
   0% { transform: translateY(0) translate(-50%); }
   50% { transform: translateY(-20px) translate(-50%); }
