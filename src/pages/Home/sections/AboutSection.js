@@ -32,7 +32,7 @@ const AboutSection = forwardRef((_, ref) => {
 
         <div className="about-sections-container">
           {appData && appData.skills.map((skillsData, i) => (
-            <div data-aos="fade-up">
+            <div data-aos="fade-up" key={i}>
               <SkillSet
                 title={skillsData.title}
                 skills={skillsData.values}
