@@ -1,13 +1,16 @@
-import { useRef, useEffect } from "react";
+import { useRef, useEffect, useContext } from "react";
 import { Link } from "react-router-dom";
 import { Icon } from "@iconify/react";
 
+import { DataContext } from "DataContext";
 import Logo from "assets/logo_full.png";
 import "./Navbar.css";
 
 export default function Navbar() {
   const navWrapperRef = useRef();
   const menuBtnRef = useRef();
+
+  const appData = useContext(DataContext);
 
   const handleMenuBtnClick = () => {
     navWrapperRef.current.classList.toggle("open");
@@ -52,28 +55,29 @@ export default function Navbar() {
               Projects
             </Link>
 
-            <a href="mailto:contact@lucism.dev">
+            {appData && <a href={`mailto:${appData.email_address}`}>
               <Icon className="icon" icon="tabler:message" />
               Contact
-            </a>
+            </a>}
 
-            <a
-              href="https://github.com/Luciism"
+            {appData && <a
+              href={appData.links.github}
               target="_blank"
               rel="noreferrer"
             >
               <Icon className="icon" icon="mdi:github" />
               Github
-            </a>
+            </a>}
 
-            <a
-              href="https://wakatime.com/@Lucism"
+            {appData && <a
+              href={appData.links.wakatime}
               target="_blank"
               rel="noreferrer"
             >
               <Icon className="icon" icon="simple-icons:wakatime" />
               Wakatime
-            </a>
+            </a>}
+
           </div>
         </div>
       </div>

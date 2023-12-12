@@ -1,4 +1,9 @@
 {
+  "email_address": "contact@lucism.dev",
+  "links": {
+    "github": "https://github.com/Luciism",
+    "wakatime": "https://wakatime.com/@Lucism"
+  },
   "about": [
     {
       "title": "Background",

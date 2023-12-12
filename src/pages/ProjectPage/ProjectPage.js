@@ -10,8 +10,8 @@ import "./ProjectPage.css";
 
 const ProjectPage = () => {
   const location = useLocation();
-  const appData = useContext(DataContext);
 
+  const appData = useContext(DataContext);
   const projectData = appData.projects[location.pathname];
 
   return (
