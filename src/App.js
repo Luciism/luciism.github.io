@@ -44,9 +44,7 @@ function App() {
         <Navbar />
         <div className="content">
           <Routes>
-            {["/", "/projects", "/about"].map((path, index) => (
-              <Route exact path={path} element={<Home />} key={index} />
-            ))}
+            <Route exact path="/" element={<Home />} />
 
             {/* project pages */}
             {appData && Object.entries(appData.projects).map(([projectRoute, projectData]) => (

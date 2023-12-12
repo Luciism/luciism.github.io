@@ -33,6 +33,7 @@
   color: var(--text);
   font-size: 58px;
   font-weight: 800;
+  text-transform: uppercase;
 }
 
 .project-page .project-intro .project-description-txt {

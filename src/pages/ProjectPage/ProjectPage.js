@@ -78,7 +78,7 @@ const ProjectPage = () => {
         </div>
 
         <div data-aos="flip-up" data-aos-offset="30">
-          <Link to="/projects" style={{textDecoration: "none"}}>
+          <Link to="/#projects" style={{textDecoration: "none"}}>
             <p
               className="padded-button background-gradient-linear back-btn"
             >

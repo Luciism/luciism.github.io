@@ -6,6 +6,7 @@ import ProjectsSection from "./sections/ProjectsSection";
 import { useEffect, useRef } from "react";
 import { useLocation } from "react-router-dom";
 import ScrollToTop from "ScrollToTop";
+import useHandleSectionHash from "hooks/useHandleSectionHash";
 
 
 export default function Home() {
@@ -15,16 +16,25 @@ export default function Home() {
   const location = useLocation();
 
   useEffect(() => {
-    if (location.pathname === "/projects") {
+    if (location.hash === "#projects") {
       projectsSectionRef.current.scrollIntoView({ behavior: "smooth" });
-    } else if (location.pathname === "/about") {
+    } else if (location.hash === "#about") {
       aboutSectionRef.current.scrollIntoView({ behavior: "smooth" });
     }
+
+    window.addEventListener("scroll", useHandleSectionHash);
+
+    return () => {
+      window.removeEventListener("scroll", useHandleSectionHash);
+    };
   });
 
   return (
     <div className="home">
-      {location.pathname === "/" && (
+      {/* document title for semantic purposes */}
+      <h1 style={{ display: "none" }}>lucism.dev - Home</h1>
+
+      {location.hash === "" && (
         <ScrollToTop scrollOptions={{ behavior: "smooth" }} />
       )}
 

@@ -5,8 +5,8 @@ import { Link } from "react-router-dom";
 
 const IntroSection = () => {
   return (
-    <div home-section="intro">
-      <Link to="/about" className="scroll-down-btn">
+    <section home-section="intro" section-id="">
+      <Link to="/#about" className="scroll-down-btn">
         <Icon icon="formkit:down" />
       </Link>
 
@@ -22,7 +22,7 @@ const IntroSection = () => {
           developer based in New Zealand.
         </p>
 
-        <Link to="/projects" style={{ textDecoration: "none" }}>
+        <Link to="/#projects" style={{ textDecoration: "none" }}>
           <div className="projects-link" data-aos="fade-up">
             <p>
               Projects <Icon className="icon" icon="quill:arrow-right" />
@@ -31,7 +31,7 @@ const IntroSection = () => {
           </div>
         </Link>
       </div>
-    </div>
+    </section>
   );
 };
 

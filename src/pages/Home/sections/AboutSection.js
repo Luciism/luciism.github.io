@@ -10,7 +10,7 @@ const AboutSection = forwardRef((_, ref) => {
   const appData = useContext(DataContext);
 
   return (
-    <div home-section="about" ref={ref}>
+    <section home-section="about" ref={ref} section-id="#about">
       <div className="about-container about">
         <h2 data-aos="fade-up">About</h2>
 
@@ -42,7 +42,7 @@ const AboutSection = forwardRef((_, ref) => {
 
         </div>
       </div>
-    </div>
+    </section>
   );
 });
 

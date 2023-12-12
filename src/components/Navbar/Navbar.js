@@ -42,20 +42,20 @@ export default function Navbar() {
               Home
             </Link>
 
-            <Link to="/about">
+            <Link to="/#about">
               <Icon className="icon" icon="mingcute:user-info-fill" />
               About
             </Link>
 
-            <Link to="/projects">
+            <Link to="/#projects">
               <Icon className="icon" icon="fluent:window-dev-edit-20-filled" />
               Projects
             </Link>
 
-            <Link to="/contact">
+            <a href="mailto:contact@lucism.dev">
               <Icon className="icon" icon="tabler:message" />
               Contact
-            </Link>
+            </a>
 
             <a
               href="https://github.com/Luciism"

@@ -53,7 +53,177 @@
         "tags": ["Full Stack", "Statistics"]
       },
       "page": {
-        "title": "STATALYTICS",
+        "title": "Statalytics",
+        "description": {
+          "short": "Statalytics is a Bedwars stats bot that offers superior speed, and reliability, real-time stats, visualizations, and regular updates.",
+          "long": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim, architecto libero voluptates culpa maxime fugit aperiam cumque, delectus eaque distinctio a similique corrupti voluptatem, quam dicta sunt veniam?"
+        },
+        "images": [
+          "https://media.discordapp.net/attachments/1027817138095915068/1182455834907783260/image.png?ex=6584c2d0&is=65724dd0&hm=d4d9e4f3dd031113bb4f99c3714bd5cf0b4f1a162ea97ffa0741eecf3f2d5ac6&=&format=webp&quality=lossless",
+          "https://media.discordapp.net/attachments/1027817138095915068/1182455834907783260/image.png?ex=6584c2d0&is=65724dd0&hm=d4d9e4f3dd031113bb4f99c3714bd5cf0b4f1a162ea97ffa0741eecf3f2d5ac6&=&format=webp&quality=lossless",
+          "https://media.discordapp.net/attachments/1027817138095915068/1182455834907783260/image.png?ex=6584c2d0&is=65724dd0&hm=d4d9e4f3dd031113bb4f99c3714bd5cf0b4f1a162ea97ffa0741eecf3f2d5ac6&=&format=webp&quality=lossless",
+          "https://media.discordapp.net/attachments/1027817138095915068/1182455834907783260/image.png?ex=6584c2d0&is=65724dd0&hm=d4d9e4f3dd031113bb4f99c3714bd5cf0b4f1a162ea97ffa0741eecf3f2d5ac6&=&format=webp&quality=lossless"
+        ],
+        "tools": [
+          "Python",
+          "Javascript",
+          "HTML",
+          "CSS",
+          "Sqlite3",
+          "Flask",
+          "PIL"
+        ]
+      },
+      "links": {
+        "github": "https://statalytics.net/github",
+        "website": "https://statalytics.net/"
+      }
+    },
+    "/projects/statalytics2": {
+      "preview": {
+        "title": "Statalytics",
+        "description": "Bedwars stats done right",
+        "thumbnail_url": "https://media.istockphoto.com/id/1407983911/photo/forex-diagrams-and-stock-market-rising-lines-with-numbers.jpg?s=612x612&w=0&k=20&c=zas1h6LR6v2iCvE7SWnVoZ_s7ZSiboN45UK0d5oMWac=",
+        "tags": ["Full Stack", "Statistics"]
+      },
+      "page": {
+        "title": "Statalytics",
+        "description": {
+          "short": "Statalytics is a Bedwars stats bot that offers superior speed, and reliability, real-time stats, visualizations, and regular updates.",
+          "long": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim, architecto libero voluptates culpa maxime fugit aperiam cumque, delectus eaque distinctio a similique corrupti voluptatem, quam dicta sunt veniam?"
+        },
+        "images": [
+          "https://media.discordapp.net/attachments/1027817138095915068/1182455834907783260/image.png?ex=6584c2d0&is=65724dd0&hm=d4d9e4f3dd031113bb4f99c3714bd5cf0b4f1a162ea97ffa0741eecf3f2d5ac6&=&format=webp&quality=lossless",
+          "https://media.discordapp.net/attachments/1027817138095915068/1182455834907783260/image.png?ex=6584c2d0&is=65724dd0&hm=d4d9e4f3dd031113bb4f99c3714bd5cf0b4f1a162ea97ffa0741eecf3f2d5ac6&=&format=webp&quality=lossless",
+          "https://media.discordapp.net/attachments/1027817138095915068/1182455834907783260/image.png?ex=6584c2d0&is=65724dd0&hm=d4d9e4f3dd031113bb4f99c3714bd5cf0b4f1a162ea97ffa0741eecf3f2d5ac6&=&format=webp&quality=lossless",
+          "https://media.discordapp.net/attachments/1027817138095915068/1182455834907783260/image.png?ex=6584c2d0&is=65724dd0&hm=d4d9e4f3dd031113bb4f99c3714bd5cf0b4f1a162ea97ffa0741eecf3f2d5ac6&=&format=webp&quality=lossless"
+        ],
+        "tools": [
+          "Python",
+          "Javascript",
+          "HTML",
+          "CSS",
+          "Sqlite3",
+          "Flask",
+          "PIL"
+        ]
+      },
+      "links": {
+        "github": "https://statalytics.net/github",
+        "website": "https://statalytics.net/"
+      }
+    },
+    "/projects/statalytics3": {
+      "preview": {
+        "title": "Statalytics",
+        "description": "Bedwars stats done right",
+        "thumbnail_url": "https://media.istockphoto.com/id/1407983911/photo/forex-diagrams-and-stock-market-rising-lines-with-numbers.jpg?s=612x612&w=0&k=20&c=zas1h6LR6v2iCvE7SWnVoZ_s7ZSiboN45UK0d5oMWac=",
+        "tags": ["Full Stack", "Statistics"]
+      },
+      "page": {
+        "title": "Statalytics",
+        "description": {
+          "short": "Statalytics is a Bedwars stats bot that offers superior speed, and reliability, real-time stats, visualizations, and regular updates.",
+          "long": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim, architecto libero voluptates culpa maxime fugit aperiam cumque, delectus eaque distinctio a similique corrupti voluptatem, quam dicta sunt veniam?"
+        },
+        "images": [
+          "https://media.discordapp.net/attachments/1027817138095915068/1182455834907783260/image.png?ex=6584c2d0&is=65724dd0&hm=d4d9e4f3dd031113bb4f99c3714bd5cf0b4f1a162ea97ffa0741eecf3f2d5ac6&=&format=webp&quality=lossless",
+          "https://media.discordapp.net/attachments/1027817138095915068/1182455834907783260/image.png?ex=6584c2d0&is=65724dd0&hm=d4d9e4f3dd031113bb4f99c3714bd5cf0b4f1a162ea97ffa0741eecf3f2d5ac6&=&format=webp&quality=lossless",
+          "https://media.discordapp.net/attachments/1027817138095915068/1182455834907783260/image.png?ex=6584c2d0&is=65724dd0&hm=d4d9e4f3dd031113bb4f99c3714bd5cf0b4f1a162ea97ffa0741eecf3f2d5ac6&=&format=webp&quality=lossless",
+          "https://media.discordapp.net/attachments/1027817138095915068/1182455834907783260/image.png?ex=6584c2d0&is=65724dd0&hm=d4d9e4f3dd031113bb4f99c3714bd5cf0b4f1a162ea97ffa0741eecf3f2d5ac6&=&format=webp&quality=lossless"
+        ],
+        "tools": [
+          "Python",
+          "Javascript",
+          "HTML",
+          "CSS",
+          "Sqlite3",
+          "Flask",
+          "PIL"
+        ]
+      },
+      "links": {
+        "github": "https://statalytics.net/github",
+        "website": "https://statalytics.net/"
+      }
+    },
+    "/projects/statalytics4": {
+      "preview": {
+        "title": "Statalytics",
+        "description": "Bedwars stats done right",
+        "thumbnail_url": "https://media.istockphoto.com/id/1407983911/photo/forex-diagrams-and-stock-market-rising-lines-with-numbers.jpg?s=612x612&w=0&k=20&c=zas1h6LR6v2iCvE7SWnVoZ_s7ZSiboN45UK0d5oMWac=",
+        "tags": ["Full Stack", "Statistics"]
+      },
+      "page": {
+        "title": "Statalytics",
+        "description": {
+          "short": "Statalytics is a Bedwars stats bot that offers superior speed, and reliability, real-time stats, visualizations, and regular updates.",
+          "long": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim, architecto libero voluptates culpa maxime fugit aperiam cumque, delectus eaque distinctio a similique corrupti voluptatem, quam dicta sunt veniam?"
+        },
+        "images": [
+          "https://media.discordapp.net/attachments/1027817138095915068/1182455834907783260/image.png?ex=6584c2d0&is=65724dd0&hm=d4d9e4f3dd031113bb4f99c3714bd5cf0b4f1a162ea97ffa0741eecf3f2d5ac6&=&format=webp&quality=lossless",
+          "https://media.discordapp.net/attachments/1027817138095915068/1182455834907783260/image.png?ex=6584c2d0&is=65724dd0&hm=d4d9e4f3dd031113bb4f99c3714bd5cf0b4f1a162ea97ffa0741eecf3f2d5ac6&=&format=webp&quality=lossless",
+          "https://media.discordapp.net/attachments/1027817138095915068/1182455834907783260/image.png?ex=6584c2d0&is=65724dd0&hm=d4d9e4f3dd031113bb4f99c3714bd5cf0b4f1a162ea97ffa0741eecf3f2d5ac6&=&format=webp&quality=lossless",
+          "https://media.discordapp.net/attachments/1027817138095915068/1182455834907783260/image.png?ex=6584c2d0&is=65724dd0&hm=d4d9e4f3dd031113bb4f99c3714bd5cf0b4f1a162ea97ffa0741eecf3f2d5ac6&=&format=webp&quality=lossless"
+        ],
+        "tools": [
+          "Python",
+          "Javascript",
+          "HTML",
+          "CSS",
+          "Sqlite3",
+          "Flask",
+          "PIL"
+        ]
+      },
+      "links": {
+        "github": "https://statalytics.net/github",
+        "website": "https://statalytics.net/"
+      }
+    },
+    "/projects/statalytics5": {
+      "preview": {
+        "title": "Statalytics",
+        "description": "Bedwars stats done right",
+        "thumbnail_url": "https://media.istockphoto.com/id/1407983911/photo/forex-diagrams-and-stock-market-rising-lines-with-numbers.jpg?s=612x612&w=0&k=20&c=zas1h6LR6v2iCvE7SWnVoZ_s7ZSiboN45UK0d5oMWac=",
+        "tags": ["Full Stack", "Statistics"]
+      },
+      "page": {
+        "title": "Statalytics",
+        "description": {
+          "short": "Statalytics is a Bedwars stats bot that offers superior speed, and reliability, real-time stats, visualizations, and regular updates.",
+          "long": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim, architecto libero voluptates culpa maxime fugit aperiam cumque, delectus eaque distinctio a similique corrupti voluptatem, quam dicta sunt veniam?"
+        },
+        "images": [
+          "https://media.discordapp.net/attachments/1027817138095915068/1182455834907783260/image.png?ex=6584c2d0&is=65724dd0&hm=d4d9e4f3dd031113bb4f99c3714bd5cf0b4f1a162ea97ffa0741eecf3f2d5ac6&=&format=webp&quality=lossless",
+          "https://media.discordapp.net/attachments/1027817138095915068/1182455834907783260/image.png?ex=6584c2d0&is=65724dd0&hm=d4d9e4f3dd031113bb4f99c3714bd5cf0b4f1a162ea97ffa0741eecf3f2d5ac6&=&format=webp&quality=lossless",
+          "https://media.discordapp.net/attachments/1027817138095915068/1182455834907783260/image.png?ex=6584c2d0&is=65724dd0&hm=d4d9e4f3dd031113bb4f99c3714bd5cf0b4f1a162ea97ffa0741eecf3f2d5ac6&=&format=webp&quality=lossless",
+          "https://media.discordapp.net/attachments/1027817138095915068/1182455834907783260/image.png?ex=6584c2d0&is=65724dd0&hm=d4d9e4f3dd031113bb4f99c3714bd5cf0b4f1a162ea97ffa0741eecf3f2d5ac6&=&format=webp&quality=lossless"
+        ],
+        "tools": [
+          "Python",
+          "Javascript",
+          "HTML",
+          "CSS",
+          "Sqlite3",
+          "Flask",
+          "PIL"
+        ]
+      },
+      "links": {
+        "github": "https://statalytics.net/github",
+        "website": "https://statalytics.net/"
+      }
+    },
+    "/projects/statalytics6": {
+      "preview": {
+        "title": "Statalytics",
+        "description": "Bedwars stats done right",
+        "thumbnail_url": "https://media.istockphoto.com/id/1407983911/photo/forex-diagrams-and-stock-market-rising-lines-with-numbers.jpg?s=612x612&w=0&k=20&c=zas1h6LR6v2iCvE7SWnVoZ_s7ZSiboN45UK0d5oMWac=",
+        "tags": ["Full Stack", "Statistics"]
+      },
+      "page": {
+        "title": "Statalytics",
         "description": {
           "short": "Statalytics is a Bedwars stats bot that offers superior speed, and reliability, real-time stats, visualizations, and regular updates.",
           "long": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim, architecto libero voluptates culpa maxime fugit aperiam cumque, delectus eaque distinctio a similique corrupti voluptatem, quam dicta sunt veniam?"

@@ -9,7 +9,7 @@ const ProjectsSection = forwardRef((_, ref) => {
   const appData = useContext(DataContext);
 
   return (
-    <div home-section="projects" ref={ref}>
+    <section home-section="projects" ref={ref} section-id="#projects">
       <div>
         <h2
           className="projects-heading"
@@ -25,7 +25,7 @@ const ProjectsSection = forwardRef((_, ref) => {
           ))}
         </div>
       </div>
-    </div>
+    </section>
   );
 });
 

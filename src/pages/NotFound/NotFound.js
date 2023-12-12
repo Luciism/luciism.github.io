@@ -10,7 +10,7 @@ const NotFound = () => {
         <hr data-aos="fade-up" data-aos-delay="100" data-aos-duration="400" />
         <h2 data-aos="fade-up" data-aos-delay="200" data-aos-duration="400" >Page Not Found</h2>
       </div>
-      <div data-aos="fade-in" data-aos-delay="300" >
+      <div data-aos="fade-in" data-aos-delay="400" >
         <Link to="/" style={{ textDecoration: "none" }}>
           <p className="padded-button background-gradient-linear home-btn">
             <Icon icon="ph:arrow-left-bold" />
