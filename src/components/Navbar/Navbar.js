@@ -67,12 +67,12 @@ export default function Navbar() {
             </a>
 
             <a
-              href="https://discord.com/users/774848780234653726"
+              href="https://wakatime.com/@Lucism"
               target="_blank"
               rel="noreferrer"
             >
-              <Icon className="icon" icon="ic:baseline-discord" />
-              Discord
+              <Icon className="icon" icon="simple-icons:wakatime" />
+              Wakatime
             </a>
           </div>
         </div>

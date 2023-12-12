@@ -98,7 +98,7 @@
   .navlinks-container {
   display: flex;
   flex-direction: column;
-  padding: 15px 55px;
+  padding: 25px 60px;
   width: 100%;
   height: 100%;
 }
@@ -120,7 +120,7 @@
   color: var(--text);
   display: flex;
   align-items: center;
-  font-size: 34px;
+  font-size: 32px;
   transition: all 0.3s ease-in-out;
 }
 
@@ -138,7 +138,7 @@
   .navlinks-container
   a
   .icon {
-  margin-right: 12px;
+  margin-right: 16px;
 }
 
 @media (width < 1400px) {
