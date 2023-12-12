@@ -1,43 +1,43 @@
 .back-to-top-btn {
-    position: fixed;
-    border-radius: 100%;
-    width: 60px;
-    height: 60px;
-    bottom: 50px;
-    right: 50px;
-    background-color: var(--secondary);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border: 1px solid rgba(255, 255, 255, 0.15);
-    transition: all 0.3s ease-in-out;
-    cursor: pointer;
-    opacity: 0;
+  position: fixed;
+  border-radius: 100%;
+  width: 60px;
+  height: 60px;
+  bottom: 50px;
+  right: 50px;
+  background-color: var(--secondary);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+  opacity: 0;
 }
 
 .back-to-top-btn.show {
-    opacity: 1;
+  opacity: 1;
 }
 
 .back-to-top-btn:hover {
-    transform: scale(1.03);
-    margin-bottom: 4px;
+  transform: scale(1.03);
+  margin-bottom: 4px;
 }
 
 .back-to-top-btn .back-to-top-arrow {
-    font-size: 36px;
-    color: var(--text);
-    transition: all 0.3s ease-in-out;
+  font-size: 36px;
+  color: var(--text);
+  transition: all 0.3s ease-in-out;
 }
 
 .back-to-top-btn:hover .back-to-top-arrow {
-    color: var(--primary);
-    transform: scale(1.03);
+  color: var(--primary);
+  transform: scale(1.03);
 }
 
 @media (width < 800px) {
- .back-to-top-btn {
+  .back-to-top-btn {
     bottom: 30px;
     right: 30px;
- }   
+  }
 }

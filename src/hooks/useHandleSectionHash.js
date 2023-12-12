@@ -8,18 +8,13 @@ export default function useHandleSectionHash() {
 
     if (
       scrollPosition >= sectionTop &&
-        (scrollPosition < sectionTop + sectionHeight)
+      scrollPosition < sectionTop + sectionHeight
     ) {
       let newHash = section.getAttribute("section-id");
 
-
       if (newHash !== `${window.location.hash}`) {
         console.log(`changing ${window.location.hash} -> ${newHash}`);
-        window.history.replaceState(
-          null,
-          null,
-          newHash === "" ? " " : newHash
-        );
+        window.history.replaceState(null, null, newHash === "" ? " " : newHash);
       }
     }
   });

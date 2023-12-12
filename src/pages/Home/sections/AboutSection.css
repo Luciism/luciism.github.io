@@ -30,7 +30,6 @@
   }
 }
 
-
 @media (width < 1400px) {
   .home [home-section="about"] {
     flex-direction: column;
@@ -55,10 +54,8 @@
   }
 }
 
-
 @media (width < 600px) {
   .home [home-section="about"] .about-container {
     width: 90vw;
   }
-
 }

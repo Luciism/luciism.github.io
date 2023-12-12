@@ -1,28 +1,23 @@
+import React, { useEffect, useRef } from "react";
+
 import polygon from "assets/shapes/polygon.png";
 import ellipse from "assets/shapes/ellipse.png";
 import skewedRectangle from "assets/shapes/skewed_rectangle.png";
 import cylinder from "assets/shapes/cylinder.png";
 import AbstractShape from "./AbstractShape";
 
-import React, { useEffect, useRef } from "react";
-
 export default function AbstractShapes() {
-  const moveShape = (
-    shape,
-    verticalSpeed,
-    horizontalSpeed,
-    rotationSpeed
-  ) => {
+  const moveShape = (shape, verticalSpeed, horizontalSpeed, rotationSpeed) => {
     const style = shape.current.style;
 
     const originalX = style.top;
     // add new calculated position to element's first position
-    style.top = `${shape.posY + (window.scrollY * verticalSpeed)}px`;
-    style.left = `${shape.posX + (window.scrollY * horizontalSpeed)}px`;
+    style.top = `${shape.posY + window.scrollY * verticalSpeed}px`;
+    style.left = `${shape.posX + window.scrollY * horizontalSpeed}px`;
 
     if (rotationSpeed !== undefined) {
       const currentRotation = parseInt(
-        style.transform.replace('rotate(', '').replace('deg)', '')
+        style.transform.replace("rotate(", "").replace("deg)", "")
       );
 
       if (style.top > originalX) {

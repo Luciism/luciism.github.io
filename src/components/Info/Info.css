@@ -17,7 +17,6 @@
   margin-left: -5px; /* accounts for outer margin on the list items */
 }
 
-
 .info-container .skill-list li {
   list-style: none;
   color: var(--text);

@@ -1,17 +1,17 @@
-import { Icon } from "@iconify/react";
-import "./Navbar.css";
-import Logo from 'assets/logo_full.png';
-import { Link } from "react-router-dom";
 import { useRef, useEffect } from "react";
+import { Link } from "react-router-dom";
+import { Icon } from "@iconify/react";
 
+import Logo from "assets/logo_full.png";
+import "./Navbar.css";
 
 export default function Navbar() {
   const navWrapperRef = useRef();
   const menuBtnRef = useRef();
 
   const handleMenuBtnClick = () => {
-    navWrapperRef.current.classList.toggle('open');
-  }
+    navWrapperRef.current.classList.toggle("open");
+  };
 
   useEffect(() => {
     const handleClick = (e) => {

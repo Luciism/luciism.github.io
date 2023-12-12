@@ -1,4 +1,4 @@
-import './Info.css'
+import "./Info.css";
 
 const SkillSet = ({ title, skills }) => {
   return (

@@ -6,9 +6,15 @@
 
 /* scroll down btn */
 @keyframes scroll-down-btn-levitate {
-  0% { transform: translateY(0) translate(-50%); }
-  50% { transform: translateY(-20px) translate(-50%); }
-  100% { transform: translateY(0) translate(-50%); }
+  0% {
+    transform: translateY(0) translate(-50%);
+  }
+  50% {
+    transform: translateY(-20px) translate(-50%);
+  }
+  100% {
+    transform: translateY(0) translate(-50%);
+  }
 }
 
 .home [home-section="intro"] .scroll-down-btn {
@@ -130,12 +136,11 @@
     justify-content: center;
     padding: 50px 25px;
   }
-  
+
   .home [home-section="intro"] .intro-text {
     margin: 75px 0 0 0;
   }
 }
-
 
 @media (width < 700px) {
   .home [home-section="intro"] .intro-text .intro-heading {

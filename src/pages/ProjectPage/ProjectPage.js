@@ -1,13 +1,12 @@
+import { useContext } from "react";
+import { useLocation, Link } from "react-router-dom";
 import { Icon } from "@iconify/react";
+
 import InfoText from "components/Info/InfoText";
 import SkillSet from "components/Info/SkillSet";
-import { Link } from "react-router-dom";
-import './ProjectPage.css'
 import ScrollToTop from "ScrollToTop";
-import { useContext } from 'react';
-import { DataContext } from 'DataContext';
-import { useLocation } from "react-router-dom";
-
+import { DataContext } from "DataContext";
+import "./ProjectPage.css";
 
 const ProjectPage = () => {
   const location = useLocation();
@@ -78,10 +77,8 @@ const ProjectPage = () => {
         </div>
 
         <div data-aos="flip-up" data-aos-offset="30">
-          <Link to="/#projects" style={{textDecoration: "none"}}>
-            <p
-              className="padded-button background-gradient-linear back-btn"
-            >
+          <Link to="/#projects" style={{ textDecoration: "none" }}>
+            <p className="padded-button background-gradient-linear back-btn">
               <Icon icon="ph:arrow-left-bold" />
               <span>Back</span>
             </p>

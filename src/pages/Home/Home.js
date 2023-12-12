@@ -1,13 +1,13 @@
-import "./Home.css";
+import { useEffect, useRef } from "react";
+import { useLocation } from "react-router-dom";
+
 import AbstractShapes from "./AbstractShapes";
 import IntroSection from "./sections/IntroSection";
 import AboutSection from "./sections/AboutSection";
 import ProjectsSection from "./sections/ProjectsSection";
-import { useEffect, useRef } from "react";
-import { useLocation } from "react-router-dom";
 import ScrollToTop from "ScrollToTop";
 import useHandleSectionHash from "hooks/useHandleSectionHash";
-
+import "./Home.css";
 
 export default function Home() {
   const projectsSectionRef = useRef(null);
