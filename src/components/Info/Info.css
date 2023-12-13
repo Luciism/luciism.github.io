@@ -1,12 +1,13 @@
-.info-container h3 {
-  color: var(--primary);
-  font-size: 38px;
-}
-
 .info-container h3,
 .info-container p {
   margin: 0;
   padding: 0;
+}
+
+.info-container h3 {
+  color: var(--primary);
+  font-size: 38px;
+  margin-bottom: 4px;
 }
 
 /* skills */
