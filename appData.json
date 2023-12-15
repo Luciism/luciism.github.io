@@ -1,0 +1,128 @@
+{
+  "email_address": "contact@lucism.dev",
+  "links": {
+    "github": "https://github.com/Luciism",
+    "wakatime": "https://wakatime.com/@Lucism"
+  },
+  "about": [
+    {
+      "title": "Background",
+      "content": "Growing up, I was always fascinated by the world of technology, I had so many questions. Everything seemed like magic, however with restricted access to technology, I didn't get many answers.\n\nIt was only when I was a teenager that I started getting answers to those burning questions. I started getting into programming topics and was invested. I loved learning new concepts and was always ready for a new challenge."
+    },
+    {
+      "title": "Interests & Goals",
+      "content": "I am currently interested in building well structured backend systems, as well as building out smaller scale projects that leverage existing UIs of established platforms such as Discord. I also enjoy tinkering with frontend tools whenever I need to create a UI for one of my projects.\n\nMoving forward, I would like to focus more on concepts such as machine learning and cybersecurity. I would also like to familiarise myself with some languages such as Rust and Go, as well as lower level languages such as C."
+    }
+  ],
+  "skills": [
+    {
+      "title": "Languages",
+      "values": [
+        "Python",
+        "Javascript",
+        "Java",
+        "HTML",
+        "CSS",
+        "SQL"
+      ]
+    },
+    {
+      "title": "Frameworks",
+      "values": [
+        "React",
+        "Node",
+        "Flask",
+        "Quart"
+      ]
+    },
+    {
+      "title": "Tools",
+      "values": [
+        "Git & Github",
+        "Bash",
+        "PostgreSQL",
+        "Sqlite3",
+        "Devtools",
+        "Figma",
+        "VSCode",
+        "IntelliJ IDEA"
+      ]
+    }
+  ],
+  "projects": {
+    "/projects/statalytics": {
+      "preview": {
+        "title": "Statalytics",
+        "description": "Bedwars stats done right",
+        "thumbnail_url": "/project_images/statalytics/preview.png",
+        "tags": ["Full Stack", "Statistics"]
+      },
+      "page": {
+        "title": "Statalytics",
+        "description": {
+          "short": "Statalytics is a Bedwars stats bot that offers superior speed, and reliability, real-time stats, visualizations, and regular updates.",
+          "long": "Statalytics is a Discord bot that leverages image manipulation in order to present Bedwars statistics in a well layed out manner. Statalytics uses Hypixel's API alongside it's large database of player data to perform accurate calculations as well as predictions.\n\nUpon a user running a command, different statistics are calculated and rendered onto images before they are sent to discord for the user to view and switch between. Users are able to customize the look of the sent images through the themes feature."
+        },
+        "images": [
+          "/project_images/statalytics/1.png",
+          "/project_images/statalytics/2.png",
+          "/project_images/statalytics/3.png",
+          "/project_images/statalytics/4.png"
+        ],
+        "tools": [
+          "Python",
+          "Javascript",
+          "HTML",
+          "CSS",
+          "Sqlite3",
+          "Flask",
+          "PIL"
+        ]
+      },
+      "links": {
+        "github": "https://statalytics.net/github",
+        "website": "https://statalytics.net/"
+      }
+    },
+    "/#projects": {
+      "preview": {
+        "title": "Placeholder",
+        "description": "Lorem ipsum dolor sit.",
+        "thumbnail_url": "https://media.discordapp.net/attachments/1027817138095915068/1182455834907783260/image.png",
+        "tags": ["Placeholder"]
+      }
+    },
+    "/#projects ": {
+      "preview": {
+        "title": "Placeholder",
+        "description": "Lorem ipsum dolor sit.",
+        "thumbnail_url": "https://media.discordapp.net/attachments/1027817138095915068/1182455834907783260/image.png",
+        "tags": ["Placeholder"]
+      }
+    },
+    "/#projects  ": {
+      "preview": {
+        "title": "Placeholder",
+        "description": "Lorem ipsum dolor sit.",
+        "thumbnail_url": "https://media.discordapp.net/attachments/1027817138095915068/1182455834907783260/image.png",
+        "tags": ["Placeholder"]
+      }
+    },
+    "/#projects   ": {
+      "preview": {
+        "title": "Placeholder",
+        "description": "Lorem ipsum dolor sit.",
+        "thumbnail_url": "https://media.discordapp.net/attachments/1027817138095915068/1182455834907783260/image.png",
+        "tags": ["Placeholder"]
+      }
+    },
+    "/#projects    ": {
+      "preview": {
+        "title": "Placeholder",
+        "description": "Lorem ipsum dolor sit.",
+        "thumbnail_url": "https://media.discordapp.net/attachments/1027817138095915068/1182455834907783260/image.png",
+        "tags": ["Placeholder"]
+      }
+    }
+  }
+}
