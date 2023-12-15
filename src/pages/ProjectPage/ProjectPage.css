@@ -78,6 +78,7 @@
   transform: scale(1.08) translateY(-12px) rotate(2deg);
 }
 
+/* project images */
 .project-page .project-images-wrapper {
   border-radius: 8px;
   overflow: hidden;
@@ -133,6 +134,16 @@ html[data-scroll="0"] .project-page .project-images-wrapper {
   .project-page {
     width: 80%;
   }
+
+  .project-page .project-images {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .project-page .project-images .project-img-wrapper:not(:first-child) {
+    margin-top: 10px;
+  }
+
 }
 
 @media (width < 600px) {

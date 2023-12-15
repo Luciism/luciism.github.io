@@ -36,7 +36,7 @@ function App() {
     };
   }, []);
 
-  return (
+  return (appData && 
     <DataContext.Provider value={appData}>
       <Router>
         <div className="App">
@@ -46,8 +46,7 @@ function App() {
               <Route exact path="/" element={<Home />} />
 
               {/* project pages */}
-              {appData &&
-                Object.entries(appData.projects).map(
+              {Object.entries(appData.projects).map(
                   ([projectRoute, projectData]) => (
                     <Route
                       key={projectRoute}

@@ -57,7 +57,7 @@ const ProjectPage = () => {
           <div className="project-images">
             {projectData.page.images.map((image, i) => (
               <div className="project-img-wrapper" key={i}>
-                <img src={image} alt={`project_image_${i}.png`} />
+                <img src={image} alt={`project_image_${i}.png`} loading="lazy"/>
               </div>
             ))}
           </div>
