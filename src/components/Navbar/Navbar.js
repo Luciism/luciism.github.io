@@ -26,6 +26,7 @@ export default function Navbar() {
         navWrapperRef.current.classList.contains("open")
       ) {
         navWrapperRef.current.classList.remove("open");
+        hamburgerIconRef.current.classList.remove("active");
       }
     };
 
