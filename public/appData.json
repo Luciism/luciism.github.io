@@ -54,20 +54,20 @@
       "preview": {
         "title": "Statalytics",
         "description": "Bedwars stats done right",
-        "thumbnail_url": "https://media.istockphoto.com/id/1407983911/photo/forex-diagrams-and-stock-market-rising-lines-with-numbers.jpg?s=612x612&w=0&k=20&c=zas1h6LR6v2iCvE7SWnVoZ_s7ZSiboN45UK0d5oMWac=",
+        "thumbnail_url": "/project_images/statalytics/preview.png",
         "tags": ["Full Stack", "Statistics"]
       },
       "page": {
         "title": "Statalytics",
         "description": {
           "short": "Statalytics is a Bedwars stats bot that offers superior speed, and reliability, real-time stats, visualizations, and regular updates.",
-          "long": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim, architecto libero voluptates culpa maxime fugit aperiam cumque, delectus eaque distinctio a similique corrupti voluptatem, quam dicta sunt veniam?"
+          "long": "Statalytics is a Discord bot that leverages image manipulation in order to present Bedwars statistics in a well layed out manner. Statalytics uses Hypixel's API alongside it's large database of player data to perform accurate calculations as well as predictions.\n\nUpon a user running a command, different statistics are calculated and rendered onto images before they are sent to discord for the user to view and switch between. Users are able to customize the look of the sent images through the themes feature."
         },
         "images": [
-          "https://media.discordapp.net/attachments/1027817138095915068/1182455834907783260/image.png",
-          "https://media.discordapp.net/attachments/1027817138095915068/1182455834907783260/image.png",
-          "https://media.discordapp.net/attachments/1027817138095915068/1182455834907783260/image.png",
-          "https://media.discordapp.net/attachments/1027817138095915068/1182455834907783260/image.png"
+          "/project_images/statalytics/1.png",
+          "/project_images/statalytics/2.png",
+          "/project_images/statalytics/3.png",
+          "/project_images/statalytics/4.png"
         ],
         "tools": [
           "Python",
