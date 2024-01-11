@@ -17,23 +17,11 @@
   "skills": [
     {
       "title": "Languages",
-      "values": [
-        "Python",
-        "Javascript",
-        "Java",
-        "HTML",
-        "CSS",
-        "SQL"
-      ]
+      "values": ["Python", "Javascript", "Java", "HTML", "CSS", "SQL"]
     },
     {
       "title": "Frameworks",
-      "values": [
-        "React",
-        "Node",
-        "Flask",
-        "Quart"
-      ]
+      "values": ["React", "Node", "Flask", "Quart"]
     },
     {
       "title": "Tools",
@@ -42,7 +30,7 @@
         "Bash",
         "PostgreSQL",
         "Sqlite3",
-        "Devtools",
+        "Docker",
         "Figma",
         "VSCode",
         "IntelliJ IDEA"
@@ -84,6 +72,33 @@
         "website": "https://statalytics.net/"
       }
     },
+    "/projects/enotify": {
+      "preview": {
+        "title": "Enotify",
+        "description": "Helping you stay connected",
+        "thumbnail_url": "/project_images/enotify/preview.png",
+        "tags": ["Full Stack", "Webmail"]
+      },
+      "page": {
+        "title": "Enotify",
+        "description": {
+          "short": "Tired of missing important emails? Enotify brings them straight to your Discord DMs, where you're always active.",
+          "long": "Tired of the email grind? Enotify cuts the cord on inbox drudgery. Enotify, your friendly robot companion, bridges the gap between Gmail and Discord. Using Google Cloud magic, Enotify listens for new emails and whispers discreet alerts on your Discord DMs, keeping you informed without the hassle."
+
+        },
+        "images": [
+          "/project_images/enotify/1.png",
+          "/project_images/enotify/2.png",
+          "/project_images/enotify/3.png",
+          "/project_images/enotify/4.png"
+        ],
+        "tools": ["Python", "Javascript", "HTML", "CSS", "PostgreSQL", "Docker", "Quart"]
+      },
+      "links": {
+        "github": "https://github.com/Luciism/enotify",
+        "website": "https://enotify.lucism.dev/"
+      }
+    },
     "/#projects": {
       "preview": {
         "title": "Placeholder",
@@ -109,14 +124,6 @@
       }
     },
     "/#projects   ": {
-      "preview": {
-        "title": "Placeholder",
-        "description": "Lorem ipsum dolor sit.",
-        "thumbnail_url": "https://media.discordapp.net/attachments/1027817138095915068/1182455834907783260/image.png",
-        "tags": ["Placeholder"]
-      }
-    },
-    "/#projects    ": {
       "preview": {
         "title": "Placeholder",
         "description": "Lorem ipsum dolor sit.",
