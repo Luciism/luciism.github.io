@@ -48,7 +48,7 @@
       "page": {
         "title": "Statalytics",
         "description": {
-          "short": "Statalytics is a Bedwars stats bot that offers superior speed, and reliability, real-time stats, visualizations, and regular updates.",
+          "short": "Statalytics is a Bedwars stats bot that offers superior speed, reliability, real-time stats, visualizations, and regular updates.",
           "long": "Statalytics is a Discord bot that leverages image manipulation in order to present Bedwars statistics in a well layed out manner. Statalytics uses Hypixel's API alongside it's large database of player data to perform accurate calculations as well as predictions.\n\nUpon a user running a command, different statistics are calculated and rendered onto images before they are sent to discord for the user to view and switch between. Users are able to customize the look of the sent images through the themes feature."
         },
         "images": [
