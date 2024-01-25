@@ -59,3 +59,10 @@
     width: 90vw;
   }
 }
+
+@media (width < 500px) {
+  .home [home-section="about"] .about-container {
+    width: 100vw;
+    padding: 50px 20px;
+  }
+}
