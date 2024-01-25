@@ -13,6 +13,7 @@ const AbstractShape = forwardRef(
       top: `${posY}px`,
       left: `${posX}px`,
       transform: `rotate(${rotation}deg)`,
+      transition: 'top 2s ease, left 2s ease',
       width: `${width}px`,
       height: height ? `${height}px` : "auto",
     };
