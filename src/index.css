@@ -5,8 +5,10 @@
   --text-secondary: #d1d1d1;
   --background: #141414;
   --primary: #946fdc;
+  --primary-translucent: rgba(148, 111, 220, 0.1);
   --secondary: #212121;
   --accent: #5e81c6;
+  --accent-translucent: rgba(94, 129, 198, 0.1);
 }
 
 * {

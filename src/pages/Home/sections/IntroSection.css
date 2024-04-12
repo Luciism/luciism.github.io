@@ -2,6 +2,27 @@
   padding: 50px;
   display: flex;
   position: relative;
+
+
+  &::before, &::after {
+    content: "";
+    width: 0;
+    height: 0;
+    position: absolute;
+    z-index: -1;
+  }
+
+  &::before {
+    left: 10%;
+    top: 30%;
+    box-shadow: 0 0 500px 120px var(--primary);
+  }
+
+  &::after {
+    right: 0;
+    bottom: 0;
+    box-shadow: 0 0 300px 90px var(--accent);
+  }
 }
 
 /* scroll down btn */
@@ -39,7 +60,7 @@
     top: 30%;
     width: 0px;
     height: 0px;
-    box-shadow: 0 0 45px 15px var(--primary);
+    box-shadow: 0 0 45px 15px var(--primary), 0 0 30px 8px var(--accent);
   }
 }
 
