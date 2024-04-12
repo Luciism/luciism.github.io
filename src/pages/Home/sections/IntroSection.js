@@ -6,9 +6,11 @@ import "./IntroSection.css";
 const IntroSection = () => {
   return (
     <section home-section="intro" section-id="">
-      <Link to="/#about" className="scroll-down-btn">
-        <Icon icon="formkit:down" />
-      </Link>
+      <div className="scroll-down-btn">
+        <Link to="/#about">
+          <Icon icon="formkit:down" />
+        </Link>
+      </div>
 
       <div className="intro-text">
         <h1 className="intro-heading" data-aos="fade-left">

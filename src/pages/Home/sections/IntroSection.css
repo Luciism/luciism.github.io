@@ -19,16 +19,31 @@
 
 .home [home-section="intro"] .scroll-down-btn {
   position: absolute;
-  text-decoration: none;
-  color: var(--text);
   bottom: 120px;
   left: 50%;
   transform: translate(-50%);
-  transition: all 0.3s ease-in-out;
+  height: max-content;
   animation: scroll-down-btn-levitate 6s ease-in-out infinite;
+  
+  & a {
+    transition: all 0.3s ease-in-out;
+    text-decoration: none;
+    color: var(--text);
+  }
+
+  
+  &::before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 30%;
+    width: 0px;
+    height: 0px;
+    box-shadow: 0 0 45px 15px var(--primary);
+  }
 }
 
-.home [home-section="intro"] .scroll-down-btn:hover {
+.home [home-section="intro"] .scroll-down-btn a:hover {
   color: var(--primary);
   animation-play-state: paused;
 }
