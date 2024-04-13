@@ -104,7 +104,7 @@
       "preview": {
         "title": "Placeholder",
         "description": "Lorem ipsum dolor sit.",
-        "thumbnail_url": "https://media.discordapp.net/attachments/1027817138095915068/1182455834907783260/image.png",
+        "thumbnail_url": "/project_images/placeholder.png",
         "tags": ["Placeholder"]
       }
     },
@@ -112,7 +112,7 @@
       "preview": {
         "title": "Placeholder",
         "description": "Lorem ipsum dolor sit.",
-        "thumbnail_url": "https://media.discordapp.net/attachments/1027817138095915068/1182455834907783260/image.png",
+        "thumbnail_url": "/project_images/placeholder.png",
         "tags": ["Placeholder"]
       }
     },
@@ -120,7 +120,7 @@
       "preview": {
         "title": "Placeholder",
         "description": "Lorem ipsum dolor sit.",
-        "thumbnail_url": "https://media.discordapp.net/attachments/1027817138095915068/1182455834907783260/image.png",
+        "thumbnail_url": "/project_images/placeholder.png",
         "tags": ["Placeholder"]
       }
     },
@@ -128,7 +128,7 @@
       "preview": {
         "title": "Placeholder",
         "description": "Lorem ipsum dolor sit.",
-        "thumbnail_url": "https://media.discordapp.net/attachments/1027817138095915068/1182455834907783260/image.png",
+        "thumbnail_url": "/project_images/placeholder.png",
         "tags": ["Placeholder"]
       }
     }
