@@ -7,6 +7,7 @@ import Navbar from "./components/Navbar/Navbar";
 import BackToTopBtn from "components/BackToTopBtn/BackToTopBtn";
 import Home from "./pages/Home/Home";
 import ProjectPage from "pages/ProjectPage/ProjectPage";
+import CommissionsHome from "pages/CommissionsHome/CommissionsHome";
 import NotFound from "pages/NotFound/NotFound";
 import { DataContext } from "./DataContext";
 
@@ -36,17 +37,19 @@ function App() {
     };
   }, []);
 
-  return (appData && 
-    <DataContext.Provider value={appData}>
-      <Router>
-        <div className="App">
-          <Navbar />
-          <div className="content">
-            <Routes>
-              <Route exact path="/" element={<Home />} />
+  return (
+    appData && (
+      <DataContext.Provider value={appData}>
+        <Router>
+          <div className="App">
+            <Navbar />
+            <div className="content">
+              <Routes>
+                <Route exact path="/" element={<Home />} />
+                <Route exact path="/commissions" element={<CommissionsHome />} />
 
-              {/* project pages */}
-              {Object.entries(appData.projects).map(
+                {/* project pages */}
+                {Object.entries(appData.projects).map(
                   ([projectRoute, projectData]) => (
                     <Route
                       key={projectRoute}
@@ -59,15 +62,17 @@ function App() {
                   )
                 )}
 
-              <Route exact path="*" element={<NotFound />} />
-            </Routes>
+                <Route exact path="*" element={<NotFound />} />
+              </Routes>
+            </div>
+            <BackToTopBtn />
           </div>
-          <BackToTopBtn />
-        </div>
-      </Router>
-    </DataContext.Provider>
+        </Router>
+      </DataContext.Provider>
+    )
   );
 }
 
 export default App;
+
 

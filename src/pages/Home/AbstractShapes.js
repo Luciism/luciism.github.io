@@ -74,8 +74,8 @@ export default function AbstractShapes() {
       />
 
       <AbstractShape
-        posX={1200}
-        posY={300}
+        posX={1000}
+        posY={200}
         rotation={45}
         width={75}
         src={skewedRectangle}

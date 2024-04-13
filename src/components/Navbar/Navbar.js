@@ -58,6 +58,11 @@ export default function Navbar() {
               Projects
             </Link>
 
+            <Link to="/commissions">
+              <Icon className="icon" icon="heroicons-solid:code" />
+              Commissions
+            </Link>
+
             {appData && (
               <a href={`mailto:${appData.email_address}`}>
                 <Icon className="icon" icon="tabler:message" />

@@ -33,6 +33,18 @@ const IntroSection = () => {
           </div>
         </Link>
       </div>
+      <div className="commissions-goto-wrapper">
+        <div className="commissions-goto-content">
+          <h2>
+            COMMISSIONS
+            <br />
+            ARE OPEN!
+          </h2>
+          <Link to="/commissions" className="goto-btn padded-button">
+            CHECK IT OUT!
+          </Link>
+        </div>
+      </div>
     </section>
   );
 };
