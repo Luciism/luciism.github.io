@@ -209,22 +209,22 @@
       },
       {
         "title": {
-          "icon": "icon-park-outline:people-speak",
-          "text": "Motivational Speech"
+          "icon": "icon-park-outline:robot-one",
+          "text": "Discord Bot"
         },
-        "description": "I will give you a personalized motivational speech tailored to your needs in your crappy falling apart life in order to get you back on track.",
+        "description": "I will create a Discord bot in accordance to your specifications.",
         "options": [
           {
-            "option": "Quick 1 min",
-            "price": "~$500-$2,000"
+            "option": "Basic commands and events",
+            "price": "~$10-$30"
           },
           {
-            "option": "Medium 5 min",
-            "price": "~$4,000-$10,000"
+            "option": "Advanced commands and events",
+            "price": "~$30-$60"
           },
           {
-            "option": "Full stalker mode 1 hour",
-            "price": "~$75,000-$150,000"
+            "option": "Custom",
+            "price": "(prices are negotiable)"
           }
         ]
       }
