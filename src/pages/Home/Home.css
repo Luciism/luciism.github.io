@@ -21,5 +21,7 @@
 }
 
 .home .abstract-shapes .abstract-shape {
-  position: relative;
+	position: relative;
+	opacity: 0.2;
+	filter: brightness(1.3) saturate(2);
 }
