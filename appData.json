@@ -7,22 +7,22 @@
   },
   "about": [
     {
-      "title": "Background",
-      "content": "Growing up, I was always fascinated by the world of technology, I had so many questions. Everything seemed like magic, however with restricted access to technology, I didn't get many answers.\n\nIt was only when I was a teenager that I started getting answers to those burning questions. I started getting into programming topics and was invested. I loved learning new concepts and was always ready for a new challenge."
+      "title": "Interests",
+      "content": "In my spare time, I engage in a wide variety of challenges, from physically demanding activities to programming challenges. I enjoy running, biking, swimming, and other sports such as football. I would also consider myself a video game enjoyer.\n\nWhen I am stuck at home, I won't hesitate to boot up VSCode to continue working on one of the various programming projects that I maintain. I enjoy creating apps, websites, digital art, Minecraft builds, anything that I can call my own."
     },
     {
-      "title": "Interests & Goals",
-      "content": "I am currently interested in building well structured backend systems, as well as building out smaller scale projects that leverage existing UIs of established platforms such as Discord. I also enjoy tinkering with frontend tools whenever I need to create a UI for one of my projects.\n\nMoving forward, I would like to focus more on concepts such as machine learning and cybersecurity. I would also like to familiarise myself with some languages such as Rust and Go, as well as lower level languages such as C."
+      "title": "Goals",
+      "content": "I am currently furthering my knowledge in many areas both within and outside of programming. I challenge myself by studing topics such as language, physics, and computer science to better prepare myself for certain future situations."
     }
   ],
   "skills": [
     {
       "title": "Languages",
-      "values": ["Python", "Javascript", "Java", "HTML", "CSS", "SQL"]
+      "values": ["Python", "Javascript", "Rust", "Java", "HTML", "CSS", "SQL"]
     },
     {
       "title": "Frameworks",
-      "values": ["React", "Node", "Flask", "Quart"]
+      "values": ["React", "Next", "Node", "Flask", "Quart", "FastAPI"]
     },
     {
       "title": "Tools",
@@ -30,6 +30,7 @@
         "Git & Github",
         "Bash",
         "PostgreSQL",
+        "MongoDB",
         "Sqlite3",
         "Docker",
         "Figma",
@@ -100,12 +101,12 @@
         "website": "https://enotify.lucism.dev/"
       }
     },
-    "/#projects": {
+    "https://islestats.net": {
       "preview": {
-        "title": "Placeholder",
-        "description": "Lorem ipsum dolor sit.",
-        "thumbnail_url": "/project_images/placeholder.png",
-        "tags": ["Placeholder"]
+        "title": "Islestats",
+        "description": "The #1 Discord bot for MCC Island.",
+        "thumbnail_url": "/project_images/islestats/preview.png",
+        "tags": ["Full Stack", "Statistics"]
       }
     },
     "/#projects ": {
@@ -145,15 +146,15 @@
         "options": [
           {
             "option": "Static single page website",
-            "price": "~$20-$40"
+            "price": "~$50-$200"
           },
           {
             "option": "Static multi-page page website",
-            "price": "~$60-$500"
+            "price": "~$1000-$5000"
           },
           {
             "option": "Fully-fledged web application",
-            "price": "~$300-$1200"
+            "price": "~$3000-$12000"
           },
           {
             "option": "Custom",
@@ -164,46 +165,21 @@
       {
         "title": {
           "icon": "mi:computer",
-          "text": "Computer Program"
+          "text": "Automation Script"
         },
-        "description": "I will create a computer program in accordance to your specifications.",
+        "description": "I will create an automation script according to your specifications.",
         "options": [
           {
             "option": "Automate simple task",
-            "price": "~$5-$30"
+            "price": "~$5-$10"
           },
           {
             "option": "Automate advanced task",
-            "price": "~$20-$70"
+            "price": "~$20-$40"
           },
           {
             "option": "Custom",
             "price": "(prices are negotiable)"
-          }
-        ]
-      },
-      {
-        "title": {
-          "icon": "octicon:image-16",
-          "text": "Minecraft Resource Pack"
-        },
-        "description": "I will create a Minecraft resource pack in accordance to your specifications.",
-        "options": [
-          {
-            "option": "Sound pack",
-            "price": "~$5-$25"
-          },
-          {
-            "option": "Mashup pack",
-            "price": "~$10-$30"
-          },
-          {
-            "option": "Overlay pack",
-            "price": "~$5-$25"
-          },
-          {
-            "option": "Fully-fledged resource pack",
-            "price": "~$75-$200"
           }
         ]
       },
