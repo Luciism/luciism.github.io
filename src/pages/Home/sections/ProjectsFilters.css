@@ -1,0 +1,84 @@
+
+.projects-section .filters {
+  max-width: 100%;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 30px 20px;
+  background-color: var(--color-secondary);
+  border: 1px solid var(--color-border);
+  border-radius: 8px;
+  box-shadow: var(--elevation-box-shadow);
+
+  & .fieldset-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 30px 20px;
+    flex-wrap: wrap;
+    flex-grow: 1;
+  }
+
+  & fieldset {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    border: none;
+
+    & legend {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      margin-bottom: 10px;
+
+      & .icon {
+        color: var(--color-accent);
+      }
+    }
+
+    & .field-options {
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+
+
+      & label {
+        cursor: pointer;
+      }
+
+      & .check {
+        display: flex;
+        gap: 8px;
+      }
+
+      &.technologies-chips {
+        max-width: 360px;
+        flex-direction: row;
+        gap: 6px;
+        flex-wrap: wrap;
+
+        & .technology-chip {
+          --chip-custom-color: 255 255 255;
+          --chip-color: 110 113 115;
+          transition:
+            background-color 0.15s ease-out,
+            border-color 0.15s ease-out;
+
+          &:has(input[type="checkbox"]:checked) {
+            --chip-color: var(--chip-custom-color);
+          }
+
+          &:hover {
+            --chip-color: 80 80 80;
+          }
+
+          & input[type="checkbox"] {
+            display: none;
+          }
+      }
+      }
+    }
+  }
+}
