@@ -195,8 +195,8 @@
         ]
       },
       "description": {
-        "short": "Statalytics is a Bedwars stats bot, providing real-time stats and professional visualizations.",
-        "long": "Statalytics is a Discord bot that leverages image manipulation in order  to present Bedwars statistics in a well layed out manner. Statalytics  uses Hypixel's API alongside it's large database of player data to perform accurate calculations as well as predictions.\n\nUpon a user running a command, different statistics are calculated and  rendered onto images before they are sent to discord for the user to  view and switch between. Users are able to customize the look of the  sent images through the themes feature."
+        "short": "Statalytics is a Discord bot that leverages image manipulation to display statistics for the popular Minecraft minigame, Bedwars.",
+        "long": "Statalytics builds on top of the Python PIL library and Hypixel's API in order to display a range of statistics for the popular Minecraft minigame, Bedwars. The bot is able to track a player's statistics over time, and extrapolate past data to make predictions.\n\nWhen a user runs a command, Statalytics generates the relevant images and sends them to Discord for the user to view and switch between.\n\nStatalytics provides the ability to customize image themes and other settings through a web dashboard. The website also enables users to purchase premium features to support the bot's development."
       },
       "demoUrl": "https://statalytics.net",
       "sourceUrl": "https://statalytics.net/github",
@@ -205,6 +205,7 @@
         { "id": "python_pillow", "allowFiltering": true },
         { "id": "python_flask", "allowFiltering": true },
         { "id": "sqlite3", "allowFiltering": true },
+        { "id": "docker", "allowFiltering": true },
         { "id": "discord", "allowFiltering": false }
       ],
       "relevance": 30,
@@ -223,11 +224,16 @@
       "images": {
         "cover": "/project_images/islestats/preview.png",
         "background": "/project_images/islestats/background.png",
-        "display": []
+        "display": [
+          "/project_images/islestats/1.png",
+          "/project_images/islestats/2.png",
+          "/project_images/islestats/3.png",
+          "/project_images/islestats/4.png"
+        ]
       },
       "description": {
-        "short": "The #1 Discord bot for MCC Island. IsleStats offers game statistics, autoroles and much more!",
-        "long": ""
+        "short": "IsleStats is a Discord bot that provides a range of functionality relating to the popular Minecraft server, MCC Island.",
+        "long": "IsleStats builds on top of the Python PIL library and MCC Island's API to deliver a range of functionality, including game statistics, automatic role assignment, and more.\n\nThe IsleStats website allows users to manage their account settings as well as fine tune the bot's behaviour for each Discord server."
       },
       "demoUrl": "https://islestats.net",
       "sourceUrl": null,
@@ -237,6 +243,7 @@
         { "id": "fastapi", "allowFiltering": true },
         { "id": "nextjs", "allowFiltering": true },
         { "id": "mongodb", "allowFiltering": true },
+        { "id": "docker", "allowFiltering": true },
         { "id": "discord", "allowFiltering": false }
       ],
       "relevance": 20,
@@ -255,11 +262,16 @@
       "images": {
         "cover": "/project_images/enotify/preview.png",
         "background": "/project_images/enotify/background.png",
-        "display": []
+        "display": [
+          "/project_images/enotify/1.png",
+          "/project_images/enotify/2.png",
+          "/project_images/enotify/3.png",
+          "/project_images/enotify/4.png"
+        ]
       },
       "description": {
-        "short": "Receive alerts for new emails from the comfort of your discord DMs.",
-        "long": ""
+        "short": "Enotify is a Discord bot that allows you to receive alerts for incoming emails directly in your Discord DMs.",
+        "long": "Enotify is designed to tackle a personal painpoint of mine - missing important emails. To solve this problem, enotify delivers notifications of new emails directly to a user's Discord DMs.\n\nThe web dashboard allows users to connect multiple email accounts, and apply specific filters on a per email account basis. Support currently only exists for Gmail.\n\nEnotify takes advantage of Google Cloud Pub / Sub and the Gmail API to deliver incoming email alerts in real time."
       },
       "demoUrl": "https://enotify.lucism.dev",
       "sourceUrl": "https://github.com/Luciism/enotify",
@@ -268,6 +280,7 @@
         { "id": "quart", "allowFiltering": true },
         { "id": "postgresql", "allowFiltering": true },
         { "id": "google_cloud", "allowFiltering": true },
+        { "id": "docker", "allowFiltering": true },
         { "id": "discord", "allowFiltering": false }
       ],
       "relevance": 10,

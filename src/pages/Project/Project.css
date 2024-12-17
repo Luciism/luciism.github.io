@@ -4,12 +4,28 @@
   align-items: center;
 
   & .project-intro-wrapper {
+    position: relative;
     height: 570px;
     width: 100%;
-    background-size: cover;
+    /* background-size: cover;
+    background-position: bottom center; */
 
     display: flex;
     justify-content: center;
+
+    --background-image: none;
+
+    &::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background-image: var(--background-image);
+      background-size: cover;
+      background-position: top center;
+      z-index: -1;
+      filter: blur(8px);
+      opacity: 0.1;
+    }
 
     & .project-intro-section {
       display: flex;

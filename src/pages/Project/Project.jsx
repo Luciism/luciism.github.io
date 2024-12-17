@@ -30,7 +30,7 @@ const ProjectPage = ({project}) => {
     <div className="project-page">
       <div
         className="project-intro-wrapper"
-        style={{ backgroundImage: `url(${project.images.background})` }}
+        style={{ "--background-image": `url(${project.images.background})` }}
       >
         <section id="intro" className="project-intro-section page-margins">
           <div className="text">
