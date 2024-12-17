@@ -94,8 +94,8 @@ const Navbar = () => {
     <nav id="navbar">
       <div className="page-margins nav-wrapper">
         <Link to="/" className="branding-link">
-          <img className="full" src="/logo_full.png" alt="Home" />
-          <img className="small" src="/logo_small.png" alt="Home" />
+          <img className="full" src="/branding/logo_full.png" alt="Home" />
+          <img className="small" src="/branding/logo_small.png" alt="Home" />
         </Link>
         <ul className="navlinks" ref={navLinksContainerRef}>
           {navlinks.map((link, i) => (

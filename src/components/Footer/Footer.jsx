@@ -14,7 +14,7 @@ const Footer = () => {
     <footer id="footer">
       <div className="footer-content page-margins">
         <Link to="/" className="branding-link">
-          <img src="/logo_full.png" alt="Home" />
+          <img src="/branding/logo_full.png" alt="Home" />
         </Link>
         <div className="links">
           <div className="socials">
