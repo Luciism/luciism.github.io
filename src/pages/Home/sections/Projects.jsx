@@ -24,8 +24,8 @@ const ProjectsSection = () => {
         filteredProjectsState={[filteredProjects, setFilteredProjects]}
       />
       <div className="project-cards-wrapper">
-        {filteredProjects.map((project) => (
-          <ProjectCard key={project.id} project={project} />
+        {filteredProjects.map((project, i) => (
+          <ProjectCard key={project.id} project={project} index={i} />
         ))}
       </div>
     </section>

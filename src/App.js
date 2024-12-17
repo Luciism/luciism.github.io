@@ -1,5 +1,7 @@
 import { useEffect, useState } from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 import Navbar from "components/Navbar/Navbar";
 import Footer from "components/Footer/Footer";
@@ -16,6 +18,12 @@ function App() {
     fetch("/appData.json")
       .then((response) => response.json())
       .then((data) => setAppData(data));
+  }, []);
+
+  useEffect(() => {
+    AOS.init({
+      once: true
+    });
   }, []);
 
   return (
@@ -45,3 +53,4 @@ function App() {
 }
 
 export default App;
+

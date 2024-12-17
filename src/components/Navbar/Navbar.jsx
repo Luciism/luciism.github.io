@@ -65,8 +65,12 @@ const Navbar = () => {
       const anchor = document.querySelector(location.hash);
       if (anchor) {
         anchor.scrollIntoView({ behavior: "smooth" });
+        return;
       }
     }
+
+    // Otherwise scroll to top
+    window.scrollTo({ top: 0 });
   }, [location]);
 
 

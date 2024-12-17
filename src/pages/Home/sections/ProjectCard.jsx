@@ -6,11 +6,11 @@ import { AppDataContext } from "DataContext";
 import "./ProjectCard.css";
 
 
-const ProjectCard = ({project}) => {
+const ProjectCard = ({project, index}) => {
   const appData = useContext(AppDataContext);
 
   return (
-    <div className="project-card">
+    <div className="project-card" data-aos="fade-up" data-aos-delay={index * 100}>
       <Link
         className="content"
         to={project.customSlug || `/projects/${project.id}`}

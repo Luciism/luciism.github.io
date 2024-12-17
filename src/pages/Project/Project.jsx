@@ -12,7 +12,7 @@ const ProjectImagesGrid = ({images}) => {
   return (
     <div className="project-images-grid">
       {images.map((image, i) => (
-        <img key={i} src={image} alt="" />
+        <img key={i} src={image} alt="" data-aos="fade-in" data-aos-delay={i * 100} />
       ))}
     </div>
   );
@@ -34,12 +34,14 @@ const ProjectPage = ({project}) => {
       >
         <section id="intro" className="project-intro-section page-margins">
           <div className="text">
-            <h1 className="uppercase">{project.name}</h1>
-            <p className="body-base color-text-secondary">
+            <h1 className="uppercase" data-aos="fade-up">
+              {project.name}
+            </h1>
+            <p className="body-base color-text-secondary" data-aos="fade-up" data-aos-delay={100}>
               {project.description.short}
             </p>
           </div>
-          <div className="buttons">
+          <div className="buttons" data-aos="fade-up" data-aos-delay={200}>
             <Link
               to={project.sourceUrl}
               className={`padded-btn small ${
@@ -73,16 +75,17 @@ const ProjectPage = ({project}) => {
           <h2>About</h2>
         </Heading>
         <div className="about-info headed-info">
-          <h3 className="subheading">Overview</h3>
+          <h3 className="subheading" data-aos="fade-in">Overview</h3>
           <p
             className="body-base color-text-secondary"
             style={{ whiteSpace: "pre-line" }}
+            data-aos="fade-up"
           >
             {project.description.long}
           </p>
         </div>
         <div className="about-info headed-info">
-          <h3 className="subheading">Tools Used</h3>
+          <h3 className="subheading" data-aos="fade-in">Tools Used</h3>
           <ToolChips tools={tools} />
         </div>
       </section>

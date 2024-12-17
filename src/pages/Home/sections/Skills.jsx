@@ -12,7 +12,9 @@ const SkillSet = ({appData, skillset}) => {
 
   return (
     <div className="skillset headed-info">
-      <h3 className="subheading">{skillset.name}</h3>
+      <h3 className="subheading" data-aos="fade-in">
+        {skillset.name}
+      </h3>
       <ToolChips tools={tools} />
     </div>
   );

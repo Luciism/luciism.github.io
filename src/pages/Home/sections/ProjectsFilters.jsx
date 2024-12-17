@@ -119,7 +119,7 @@ const ProjectsFilters = ({
   );
 
   return (
-    <form id="filters" className="filters">
+    <form id="filters" className="filters" data-aos="fade-up">
       <div className="fieldset-container">
         <fieldset>
           <legend className="title-small">

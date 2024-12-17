@@ -13,8 +13,8 @@ const IntroSection = () => {
 
   return (
     <section id="about" className="intro-section page-margins">
-      <img src="/mugshot.png" alt="Mugshot" className="mugshot" />
-      <div className="intro">
+      <img src="/mugshot.png" alt="Mugshot" className="mugshot" data-aos="fade-up" />
+      <div className="intro" data-aos="fade-left">
         <div className="info-text">
           <p className="location">
             <Icon
