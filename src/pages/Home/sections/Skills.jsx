@@ -2,27 +2,18 @@ import { useContext } from "react";
 
 import { AppDataContext } from "DataContext";
 import Heading from "components/Heading/Heading";
-import "./Skills.css";
+import ToolChips from "components/ToolChips/ToolChips";
 
 
 const SkillSet = ({appData, skillset}) => {
   const tools = skillset.toolIDs.map(
     (toolID) => appData.availableTools.find((t) => t.id === toolID)
   );
-  console.log(tools);
-
 
   return (
-    <div className="skillset">
+    <div className="skillset headed-info">
       <h3 className="subheading">{skillset.name}</h3>
-      <div className="skills-container">
-        {tools.map((tool, i) => (
-          <div className="skill-chip" key={i}>
-            <img src={tool.icon} alt={tool.name} />
-            <p className="body-medium color-text-secondary">{tool.name}</p>
-          </div>
-        ))}
-      </div>
+      <ToolChips tools={tools} />
     </div>
   );
 }

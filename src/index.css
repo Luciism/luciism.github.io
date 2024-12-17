@@ -51,6 +51,10 @@ main#main {
 
 
 /* Text styles */
+.uppercase {
+  text-transform: uppercase;
+}
+
 h1 {
   font-weight: 700;
   font-size: 3rem;
@@ -117,6 +121,12 @@ h2 {
 
 .color-primary {
   color: var(--color-primary);
+}
+
+& .headed-info {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
 }
 
 /* Inputs */

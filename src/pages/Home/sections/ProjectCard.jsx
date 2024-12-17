@@ -18,7 +18,7 @@ const ProjectCard = ({project}) => {
         <div className="cover-img-wrapper">
           <img
             className="cover-img"
-            src={project.coverImage}
+            src={project.images.cover}
             alt={`Cover ${"image"} for ${project.name}`}
           />
         </div>

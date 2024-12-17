@@ -184,10 +184,19 @@
     {
       "id": "statalytics",
       "name": "Statalytics",
-      "coverImage": "/project_images/statalytics/preview.png",
+      "images": {
+        "cover": "/project_images/statalytics/preview.png",
+        "background": "/project_images/statalytics/background.png",
+        "display": [
+          "/project_images/statalytics/1.png",
+          "/project_images/statalytics/2.png",
+          "/project_images/statalytics/3.png",
+          "/project_images/statalytics/4.png"
+        ]
+      },
       "description": {
         "short": "Statalytics is a Bedwars stats bot, providing real-time stats and professional visualizations.",
-        "long": ""
+        "long": "Statalytics is a Discord bot that leverages image manipulation in order  to present Bedwars statistics in a well layed out manner. Statalytics  uses Hypixel's API alongside it's large database of player data to perform accurate calculations as well as predictions.\n\nUpon a user running a command, different statistics are calculated and  rendered onto images before they are sent to discord for the user to  view and switch between. Users are able to customize the look of the  sent images through the themes feature."
       },
       "demoUrl": "https://statalytics.net",
       "sourceUrl": "https://statalytics.net/github",
@@ -211,7 +220,11 @@
     {
       "id": "islestats",
       "name": "IsleStats",
-      "coverImage": "/project_images/islestats/preview.png",
+      "images": {
+        "cover": "/project_images/islestats/preview.png",
+        "background": "/project_images/islestats/background.png",
+        "display": []
+      },
       "description": {
         "short": "The #1 Discord bot for MCC Island. IsleStats offers game statistics, autoroles and much more!",
         "long": ""
@@ -239,7 +252,11 @@
     {
       "id": "enotify",
       "name": "Enotify",
-      "coverImage": "/project_images/enotify/preview.png",
+      "images": {
+        "cover": "/project_images/enotify/preview.png",
+        "background": "/project_images/enotify/background.png",
+        "display": []
+      },
       "description": {
         "short": "Receive alerts for new emails from the comfort of your discord DMs.",
         "long": ""
