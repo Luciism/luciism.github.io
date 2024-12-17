@@ -4,7 +4,7 @@ import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Navbar from "components/Navbar/Navbar";
 import Footer from "components/Footer/Footer";
 import Home from "pages/Home/Home";
-// import NotFound from "pages/NotFound/NotFound";
+import NotFound from "pages/NotFound/NotFound";
 import { AppDataContext } from "./DataContext";
 
 
@@ -22,10 +22,10 @@ function App() {
       <AppDataContext.Provider value={appData}>
           <Router>
             <Navbar />
-            <main className="content">
+            <main id="main" className="content">
               <Routes>
                 <Route exact path="/" element={<Home />} />
-                {/* <Route exact path="*" element={<NotFound />} /> */}
+                <Route exact path="*" element={<NotFound />} />
               </Routes>
             </main>
             <Footer />

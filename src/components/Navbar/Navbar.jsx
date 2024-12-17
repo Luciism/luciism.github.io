@@ -1,6 +1,8 @@
 import { useEffect, useRef, useState } from "react";
 import { Link, useLocation } from "react-router-dom";
+import { useContext } from "react";
 
+import { AppDataContext } from "DataContext";
 import "./Navbar.css";
 
 
@@ -67,6 +69,7 @@ const Navbar = () => {
     }
   }, [location]);
 
+
   // Setup navlinks
   const navLinksContainerRef = useRef();
 
@@ -79,11 +82,12 @@ const Navbar = () => {
     return () => teardown();
   }, [activeNavlinkIndex]);
 
+  const appData = useContext(AppDataContext);
   const navlinks = [
     { name: "About", href: "/#about" },
     { name: "Projects", href: "/#projects" },
     { name: "Skills", href: "/#skills" },
-    { name: "Contact", href: "/#contact" },
+    { name: "Contact", href: `mailto:${appData.emailAddress}` },
   ]
 
   return (
