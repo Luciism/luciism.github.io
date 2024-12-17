@@ -8,6 +8,7 @@ import Footer from "components/Footer/Footer";
 import Home from "pages/Home/Home";
 import ProjectPage from "pages/Project/Project";
 import NotFound from "pages/NotFound/NotFound";
+import BackToTopBtn from "components/BackToTop/BackToTop";
 import { AppDataContext } from "./DataContext";
 
 
@@ -46,6 +47,7 @@ function App() {
               </Routes>
             </main>
             <Footer />
+            <BackToTopBtn />
           </Router>
       </AppDataContext.Provider>
     )
