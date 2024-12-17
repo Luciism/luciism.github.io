@@ -1,4 +1,4 @@
-import HomePageBackgroundBlur from "assets/homepage_background_blur.png"
+import BackgroundBlur1 from "components/BackgroundBlur/BackgroundBlur1";
 import IntroSection from "./sections/Intro";
 import ProjectsSection from "./sections/Projects";
 import SkillsSection from "./sections/Skills";
@@ -7,13 +7,7 @@ import "./Home.css"
 const Home = () => {
   return (
     <>
-      <div className="background-blur-wrapper">
-        <img
-          src={HomePageBackgroundBlur}
-          alt="Background Blur"
-          className="background-blur"
-        />
-      </div>
+      <BackgroundBlur1 />
       <div className="homepage-wrapper">
         <IntroSection />
         <ProjectsSection />

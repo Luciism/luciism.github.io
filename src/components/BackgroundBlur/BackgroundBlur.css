@@ -1,0 +1,56 @@
+.bg-blur-container {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  overflow: hidden;
+  z-index: -1;
+  /* max-height: 100vh; */
+  pointer-events: none;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  opacity: 0.6;
+  filter: blur(100px);
+
+  & svg {
+    position: relative;
+  }
+}
+
+
+.bg-blur-container.bg-blur-1 {
+  & svg:nth-child(1) {
+    top: 200px;
+    left: -25%;
+  }
+
+  & svg:nth-child(2) {
+    top: 0px;
+    left: -5%;
+  }
+
+  & svg:nth-child(3) {
+    top: 12%;
+    left: -5%;
+  }
+
+  & svg:nth-child(4) {
+    top: -160px;
+    left: 20%;
+  }
+
+  & svg:nth-child(5) {
+    top: 5%;
+    left: 0;
+  }
+
+  & svg:nth-child(6) {
+    top: 8%;
+    left: -22%;
+  }
+}
