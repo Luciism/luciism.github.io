@@ -1,209 +1,297 @@
 {
-  "email_address": "contact@lucism.dev",
-  "links": {
+  "emailAddress": "contact@lucism.dev",
+  "socials": {
     "github": "https://github.com/Luciism",
-    "wakatime": "https://wakatime.com/@Lucism",
-    "discord": "https://discordapp.com/users/774848780234653726"
+    "linkedin": "",
+    "codepen": "https://codepen.io/Lucism",
+    "wakatime": "https://wakatime.com/@Lucism"
   },
-  "about": [
+  "availableTools": [
     {
-      "title": "Interests",
-      "content": "In my spare time, I engage in a wide variety of challenges, from physically demanding activities to programming challenges. I enjoy running, biking, swimming, and other sports such as football. I would also consider myself a video game enjoyer.\n\nWhen I am stuck at home, I won't hesitate to boot up VSCode to continue working on one of the various programming projects that I maintain. I enjoy creating apps, websites, digital art, Minecraft builds, anything that I can call my own."
+      "id": "python",
+      "name": "Python",
+      "icon": "/tech_icons/python.png",
+      "rgb": "55 117 169"
     },
     {
-      "title": "Goals",
-      "content": "I am currently furthering my knowledge in many areas both within and outside of programming. I challenge myself by studing topics such as language, physics, and computer science to better prepare myself for certain future situations."
+      "id": "python_pillow",
+      "name": "Pillow",
+      "icon": "/tech_icons/python_pillow.png",
+      "rgb": "134 170 238"
+    },
+    {
+      "id": "python_flask",
+      "name": "Flask",
+      "icon": "/tech_icons/python_flask.png",
+      "rgb": "255 255 255"
+    },
+    {
+      "id": "quart",
+      "name": "Quart",
+      "icon": "/tech_icons/quart.png",
+      "rgb": "42 57 151"
+    },
+    {
+      "id": "fastapi",
+      "name": "FastAPI",
+      "icon": "/tech_icons/fastapi.png",
+      "rgb": "1 146 134"
+    },
+    {
+      "id": "rust",
+      "name": "Rust",
+      "icon": "/tech_icons/rust.png",
+      "rgb": "157 94 53"
+    },
+    {
+      "id": "javascript",
+      "name": "JavaScript",
+      "icon": "/tech_icons/javascript.png",
+      "rgb": "240 219 79"
+    },
+    {
+      "id": "html",
+      "name": "HTML5",
+      "icon": "/tech_icons/html.png",
+      "rgb": "239 101 42"
+    },
+    {
+      "id": "css",
+      "name": "CSS3",
+      "icon": "/tech_icons/css.png",
+      "rgb": "60 156 215"
+    },
+    {
+      "id": "java",
+      "name": "Java",
+      "icon": "/tech_icons/java.png",
+      "rgb": "19 77 108"
+    },
+    {
+      "id": "discord",
+      "name": "Discord",
+      "icon": "/tech_icons/discord.png",
+      "rgb": "88 101 242"
+    },
+    {
+      "id": "nextjs",
+      "name": "Next.js",
+      "icon": "/tech_icons/nextjs.png",
+      "rgb": "255 255 255"
+    },
+    {
+      "id": "react",
+      "name": "React",
+      "icon": "/tech_icons/react.png",
+      "rgb": "97 218 251"
+    },
+    {
+      "id": "mongodb",
+      "name": "MongoDB",
+      "icon": "/tech_icons/mongodb.png",
+      "rgb": "6 171 78"
+    },
+    {
+      "id": "postgresql",
+      "name": "PostgreSQL",
+      "icon": "/tech_icons/postgresql.png",
+      "rgb": "51 103 145"
+    },
+    {
+      "id": "sqlite3",
+      "name": "SQLite3",
+      "icon": "/tech_icons/sqlite3.png",
+      "rgb": "15 128 204"
+    },
+    {
+      "id": "google_cloud",
+      "name": "Google Cloud",
+      "icon": "/tech_icons/google_cloud.png",
+      "rgb": "251 188 5"
+    },
+    {
+      "id": "git",
+      "name": "Git & GitHub",
+      "icon": "/tech_icons/git.png",
+      "rgb": "222 76 54"
+    },
+    {
+      "id": "docker",
+      "name": "Docker",
+      "icon": "/tech_icons/docker.png",
+      "rgb": "0 146 230"
+    },
+    {
+      "id": "figma",
+      "name": "Figma",
+      "icon": "/tech_icons/figma.png",
+      "rgb": "0 182 255"
+    },
+    {
+      "id": "vscode",
+      "name": "VSCode",
+      "icon": "/tech_icons/vscode.png",
+      "rgb": "55 166 241"
     }
   ],
-  "skills": [
+  "availableProjectProperties": [
     {
-      "title": "Languages",
-      "values": ["Python", "Javascript", "Rust", "Java", "HTML", "CSS", "SQL"]
+      "id": "webDevelopment",
+      "name": "Web Development"
     },
     {
-      "title": "Frameworks",
-      "values": ["React", "Next", "Node", "Flask", "Quart", "FastAPI"]
+      "id": "fullStack",
+      "name": "Full Stack"
     },
     {
-      "title": "Tools",
-      "values": [
-        "Git & Github",
-        "Bash",
-        "PostgreSQL",
-        "MongoDB",
-        "Sqlite3",
-        "Docker",
-        "Figma",
-        "VSCode",
-        "IntelliJ IDEA"
+      "id": "openSource",
+      "name": "Open Source"
+    },
+    {
+      "id": "clientWork",
+      "name": "Client Work"
+    }
+  ],
+  "skillsets": [
+    {
+      "name": "Languages",
+      "toolIDs": [
+        "python",
+        "rust",
+        "javascript",
+        "html",
+        "css"
+      ]
+    },
+    {
+      "name": "Frameworks",
+      "toolIDs": ["react", "nextjs", "fastapi", "python_flask", "quart"]
+    },
+    {
+      "name": "Tools & Databases",
+      "toolIDs": [
+        "git",
+        "docker",
+        "figma",
+        "vscode",
+        "postgresql",
+        "mongodb",
+        "sqlite3"
       ]
     }
   ],
-  "projects": {
-    "/projects/statalytics": {
-      "preview": {
-        "title": "Statalytics",
-        "description": "Bedwars stats done right",
-        "thumbnail_url": "/project_images/statalytics/preview.png",
-        "tags": ["Full Stack", "Statistics"]
-      },
-      "page": {
-        "title": "Statalytics",
-        "description": {
-          "short": "Statalytics is a Bedwars stats bot that offers superior speed, reliability, real-time stats, visualizations, and regular updates.",
-          "long": "Statalytics is a Discord bot that leverages image manipulation in order to present Bedwars statistics in a well layed out manner. Statalytics uses Hypixel's API alongside it's large database of player data to perform accurate calculations as well as predictions.\n\nUpon a user running a command, different statistics are calculated and rendered onto images before they are sent to discord for the user to view and switch between. Users are able to customize the look of the sent images through the themes feature."
-        },
-        "images": [
+  "projects": [
+    {
+      "id": "statalytics",
+      "name": "Statalytics",
+      "images": {
+        "cover": "/project_images/statalytics/preview.png",
+        "background": "/project_images/statalytics/background.png",
+        "display": [
           "/project_images/statalytics/1.png",
           "/project_images/statalytics/2.png",
           "/project_images/statalytics/3.png",
           "/project_images/statalytics/4.png"
-        ],
-        "tools": [
-          "Python",
-          "Javascript",
-          "HTML",
-          "CSS",
-          "Sqlite3",
-          "Flask",
-          "PIL"
         ]
       },
-      "links": {
-        "github": "https://statalytics.net/github",
-        "website": "https://statalytics.net/"
-      }
-    },
-    "/projects/enotify": {
-      "preview": {
-        "title": "Enotify",
-        "description": "Helping you stay connected",
-        "thumbnail_url": "/project_images/enotify/preview.png",
-        "tags": ["Full Stack", "Webmail"]
+      "description": {
+        "short": "Statalytics is a Discord bot that leverages image manipulation to display statistics for the popular Minecraft minigame, Bedwars.",
+        "long": "Statalytics builds on top of the Python PIL library and Hypixel's API in order to display a range of statistics for the popular Minecraft minigame, Bedwars. The bot is able to track a player's statistics over time, and extrapolate past data to make predictions.\n\nWhen a user runs a command, Statalytics generates the relevant images and sends them to Discord for the user to view and switch between.\n\nStatalytics provides the ability to customize image themes and other settings through a web dashboard. The website also enables users to purchase premium features to support the bot's development."
       },
-      "page": {
-        "title": "Enotify",
-        "description": {
-          "short": "Tired of missing important emails? Enotify brings them straight to your Discord DMs, where you're always active.",
-          "long": "Tired of the email grind? Enotify cuts the cord on inbox drudgery. Enotify, your friendly robot companion, bridges the gap between Gmail and Discord. Using Google Cloud magic, Enotify listens for new emails and whispers discreet alerts on your Discord DMs, keeping you informed without the hassle."
-
-        },
-        "images": [
+      "demoUrl": "https://statalytics.net",
+      "sourceUrl": "https://statalytics.net/github",
+      "tools": [
+        { "id": "python", "allowFiltering": true },
+        { "id": "python_pillow", "allowFiltering": true },
+        { "id": "python_flask", "allowFiltering": true },
+        { "id": "sqlite3", "allowFiltering": true },
+        { "id": "docker", "allowFiltering": true },
+        { "id": "discord", "allowFiltering": false }
+      ],
+      "relevance": 30,
+      "properties": {
+        "webDevelopment": true,
+        "fullStack": true,
+        "discordBot": true,
+        "openSource": true,
+        "clientWork": false
+      },
+      "projectStartTimestamp": 1672743660
+    },
+    {
+      "id": "islestats",
+      "name": "IsleStats",
+      "images": {
+        "cover": "/project_images/islestats/preview.png",
+        "background": "/project_images/islestats/background.png",
+        "display": [
+          "/project_images/islestats/1.png",
+          "/project_images/islestats/2.png",
+          "/project_images/islestats/3.png",
+          "/project_images/islestats/4.png"
+        ]
+      },
+      "description": {
+        "short": "IsleStats is a Discord bot that provides a range of functionality relating to the popular Minecraft server, MCC Island.",
+        "long": "IsleStats builds on top of the Python PIL library and MCC Island's API to deliver a range of functionality, including game statistics, automatic role assignment, and more.\n\nThe IsleStats website allows users to manage their account settings as well as fine tune the bot's behaviour for each Discord server."
+      },
+      "demoUrl": "https://islestats.net",
+      "sourceUrl": null,
+      "tools": [
+        { "id": "python", "allowFiltering": true },
+        { "id": "python_pillow", "allowFiltering": true },
+        { "id": "fastapi", "allowFiltering": true },
+        { "id": "nextjs", "allowFiltering": true },
+        { "id": "mongodb", "allowFiltering": true },
+        { "id": "docker", "allowFiltering": true },
+        { "id": "discord", "allowFiltering": false }
+      ],
+      "relevance": 20,
+      "properties": {
+        "webDevelopment": true,
+        "fullStack": true,
+        "discordBot": true,
+        "openSource": false,
+        "clientWork": false
+      },
+      "projectStartTimestamp": 1705748640
+    },
+    {
+      "id": "enotify",
+      "name": "Enotify",
+      "images": {
+        "cover": "/project_images/enotify/preview.png",
+        "background": "/project_images/enotify/background.png",
+        "display": [
           "/project_images/enotify/1.png",
           "/project_images/enotify/2.png",
           "/project_images/enotify/3.png",
           "/project_images/enotify/4.png"
-        ],
-        "tools": ["Python", "Javascript", "HTML", "CSS", "PostgreSQL", "Docker", "Quart"]
+        ]
       },
-      "links": {
-        "github": "https://github.com/Luciism/enotify",
-        "website": "https://enotify.lucism.dev/"
-      }
-    },
-    "https://islestats.net": {
-      "preview": {
-        "title": "Islestats",
-        "description": "The #1 Discord bot for MCC Island.",
-        "thumbnail_url": "/project_images/islestats/preview.png",
-        "tags": ["Full Stack", "Statistics"]
-      }
-    },
-    "/#projects ": {
-      "preview": {
-        "title": "Placeholder",
-        "description": "Lorem ipsum dolor sit.",
-        "thumbnail_url": "/project_images/placeholder.png",
-        "tags": ["Placeholder"]
-      }
-    },
-    "/#projects  ": {
-      "preview": {
-        "title": "Placeholder",
-        "description": "Lorem ipsum dolor sit.",
-        "thumbnail_url": "/project_images/placeholder.png",
-        "tags": ["Placeholder"]
-      }
-    },
-    "/#projects   ": {
-      "preview": {
-        "title": "Placeholder",
-        "description": "Lorem ipsum dolor sit.",
-        "thumbnail_url": "/project_images/placeholder.png",
-        "tags": ["Placeholder"]
-      }
+      "description": {
+        "short": "Enotify is a Discord bot that allows you to receive alerts for incoming emails directly in your Discord DMs.",
+        "long": "Enotify is designed to tackle a personal painpoint of mine - missing important emails. To solve this problem, enotify delivers notifications of new emails directly to a user's Discord DMs.\n\nThe web dashboard allows users to connect multiple email accounts, and apply specific filters on a per email account basis. Support currently only exists for Gmail.\n\nEnotify takes advantage of Google Cloud Pub / Sub and the Gmail API to deliver incoming email alerts in real time."
+      },
+      "demoUrl": "https://enotify.lucism.dev",
+      "sourceUrl": "https://github.com/Luciism/enotify",
+      "tools": [
+        { "id": "python", "allowFiltering": true },
+        { "id": "quart", "allowFiltering": true },
+        { "id": "postgresql", "allowFiltering": true },
+        { "id": "google_cloud", "allowFiltering": true },
+        { "id": "docker", "allowFiltering": true },
+        { "id": "discord", "allowFiltering": false }
+      ],
+      "relevance": 10,
+      "properties": {
+        "webDevelopment": true,
+        "fullStack": true,
+        "discordBot": true,
+        "openSource": true,
+        "clientWork": false
+      },
+      "projectStartTimestamp": 1674731340
     }
-  },
-  "commissions": {
-    "email_address": "commissions@lucism.dev",
-    "options": [
-      {
-        "title": {
-          "icon": "mdi:code-block-html",
-          "text": "Web Design / Development"
-        },
-        "description": "I will create and/or design a website in accordance to your specifications.",
-        "options": [
-          {
-            "option": "Static single page website",
-            "price": "~$50-$200"
-          },
-          {
-            "option": "Static multi-page page website",
-            "price": "~$1000-$5000"
-          },
-          {
-            "option": "Fully-fledged web application",
-            "price": "~$3000-$12000"
-          },
-          {
-            "option": "Custom",
-            "price": "(prices are negotiable)"
-          }
-        ]
-      },
-      {
-        "title": {
-          "icon": "mi:computer",
-          "text": "Automation Script"
-        },
-        "description": "I will create an automation script according to your specifications.",
-        "options": [
-          {
-            "option": "Automate simple task",
-            "price": "~$5-$10"
-          },
-          {
-            "option": "Automate advanced task",
-            "price": "~$20-$40"
-          },
-          {
-            "option": "Custom",
-            "price": "(prices are negotiable)"
-          }
-        ]
-      },
-      {
-        "title": {
-          "icon": "icon-park-outline:robot-one",
-          "text": "Discord Bot"
-        },
-        "description": "I will create a Discord bot in accordance to your specifications.",
-        "options": [
-          {
-            "option": "Basic commands and events",
-            "price": "~$10-$30"
-          },
-          {
-            "option": "Advanced commands and events",
-            "price": "~$30-$60"
-          },
-          {
-            "option": "Custom",
-            "price": "(prices are negotiable)"
-          }
-        ]
-      }
-    ]
-  }
+  ]
 }
