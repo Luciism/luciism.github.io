@@ -22,16 +22,16 @@
   }
 
   & fieldset {
-    display: flex;
     flex-direction: column;
     gap: 10px;
     border: none;
+    display: flex !important;
 
     & legend {
-      display: flex;
       align-items: center;
       gap: 6px;
       margin-bottom: 10px;
+      display: flex !important;
 
       & .icon {
         color: var(--color-accent);
