@@ -12,13 +12,26 @@
   border-radius: 8px;
   box-shadow: var(--elevation-box-shadow);
 
-  & .fieldset-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    gap: 30px 20px;
-    flex-wrap: wrap;
-    flex-grow: 1;
+  /* & .fieldset-container { */
+  /*   display: flex; */
+  /*   justify-content: space-between; */
+  /*   align-items: flex-start; */
+  /*   gap: 30px 20px; */
+  /*   flex-wrap: wrap; */
+  /*   flex-grow: 1; */
+  /* } */
+
+  @media (width < 1200px) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  @media (width < 700px) {
+    grid-template-columns: 1fr;
+
+    & select, & button, & input:not([type="checkbox"]) {
+      width: 100%;
+    }
   }
 
   & fieldset {
