@@ -132,6 +132,25 @@
       "name": "VSCode",
       "icon": "/tech_icons/vscode.png",
       "rgb": "55 166 241"
+    },
+    {
+      "id": "neovim",
+      "name": "Neovim",
+      "icon": "/tech_icons/neovim.png",
+      "rgb": "91 167 60"
+    },
+    {
+      "id": "nix",
+      "name": "Nix / Nixos",
+      "icon": "/tech_icons/nix.png",
+      "rgb": "81 120 196"
+    },
+    {
+
+      "id": "redis",
+      "name": "Redis",
+      "icon": "/tech_icons/redis.png",
+      "rgb": "198 48 43"
     }
   ],
   "availableProjectProperties": [
@@ -148,8 +167,12 @@
       "name": "Open Source"
     },
     {
-      "id": "clientWork",
-      "name": "Client Work"
+      "id": "saas",
+      "name": "SaaS"
+    },
+    {
+      "id": "tool",
+      "name": "Tools"
     }
   ],
   "skillsets": [
@@ -174,9 +197,12 @@
         "docker",
         "figma",
         "vscode",
+        "neovim",
+        "nix",
         "postgresql",
         "mongodb",
-        "sqlite3"
+        "sqlite3",
+        "redis"
       ]
     }
   ],
@@ -191,22 +217,42 @@
           "/project_images/statalytics/1.png",
           "/project_images/statalytics/2.png",
           "/project_images/statalytics/3.png",
-          "/project_images/statalytics/4.png"
+          "/project_images/statalytics/4.png",
+          "/project_images/statalytics/5.png",
+          "/project_images/statalytics/6.png"
         ]
       },
       "description": {
-        "short": "Statalytics is a Discord bot that leverages image manipulation to display statistics for the popular Minecraft minigame, Bedwars.",
-        "long": "Statalytics builds on top of the Python PIL library and Hypixel's API in order to display a range of statistics for the popular Minecraft minigame, Bedwars. The bot is able to track a player's statistics over time, and extrapolate past data to make predictions.\n\nWhen a user runs a command, Statalytics generates the relevant images and sends them to Discord for the user to view and switch between.\n\nStatalytics provides the ability to customize image themes and other settings through a web dashboard. The website also enables users to purchase premium features to support the bot's development."
+        "short": "Statalytics is a Discord integration for viewing neatly rendered game statistics for the popular Minecraft minigame, Bedwars.",
+        "long": [
+          {
+            "heading": "Tooling",
+            "content": "Statalytics is a Discord integration that provides an interface for viewing game stats for the popular Minecraft minigame, Bedwars. It builds on top of my image templating pipeline, Fractyl, to deliver sleek real-time renders in a timely manner. Discord users are able to run commands via the Statalytics Discord integration, which then fetches the relevant data from Hypixel's public API and generates the appropriate image, taking into account the user's settings and given parameters.\n\nThe decision to build with Python for the Discord integration stemmed from its rich support for image manipulation and Discord integration via Pillow and discord.py respectively. Subsequent services were also built in Python to leverage the Statalytics internal shared library and reduce project complexity.\n\nRedis streams are used for real-time communication between services and to send important notifications to subscribed team members via Discord. With guaranteed message delivery being a requirement, and due to the lightweight nature of Redis, Redis streams were the best fit for this problem."
+          },
+          {
+            "heading": "UX / Web Interface",
+            "content": "Statalytics has a user web dashboard for users to manage their settings such as account connections, theming, and timezones. The Statalytics backend integrates with Discord OAuth to provide a seamless and secure experience for the target audience. Statalytics builds on Discord's OAuth, with its own permission and subscription systems to gate access to certain functionalities.\n\nStatalytics also has an administrator dashboard for the team to manage different aspects of Statalytics' services. It includes growth insights, real-time logs, and user data management."
+          },
+          {
+            "heading": "Real World Impact",
+            "content": "The Statalytics Discord integration has been added to ~4000 Discord servers and has served ~1 million requests since launch. Users depend on functionalities such as stat projection and periodic stat tracking."
+          },
+          {
+            "heading": "Lessons and Evolution",
+            "content": "Statalytics was my first ever and longest running actively maintained project, and with a real user base, has demanded more of my focus to deliver improvements. Because of its evolution, I have learned the pain of technical debt and have spent more time rewriting parts of services (accounts, rendering) than shipping new features. This project was the driver of my initial experiences with version control, containerization, web development, and maintainable code, laying the foundation for other projects that I have worked on.\n\nMany aspects of this project have been iterated upon multiple times over the years. A good example of this is the rendering / design system. What originated as the monotonous manual positioning of elements and individual draw calls evolved into a slightly more visually consistent design with a specialized wrapper, and inspired me to create the Fractyl image templating pipeline. Enabled by the flexibility of SVGs, I was able to advance another step in rendering complexity, including visual properties like dynamic gradients and real-time theming."
+          }
+        ]
       },
       "demoUrl": "https://statalytics.net",
       "sourceUrl": "https://statalytics.net/github",
       "tools": [
         { "id": "python", "allowFiltering": true },
         { "id": "python_pillow", "allowFiltering": true },
-        { "id": "python_flask", "allowFiltering": true },
+        { "id": "quart", "allowFiltering": true },
         { "id": "sqlite3", "allowFiltering": true },
-        { "id": "docker", "allowFiltering": true },
-        { "id": "discord", "allowFiltering": false }
+        { "id": "docker", "allowFiltering": false },
+        { "id": "discord", "allowFiltering": false },
+        { "id": "redis", "allowFiltering": true }
       ],
       "relevance": 30,
       "properties": {
@@ -214,7 +260,8 @@
         "fullStack": true,
         "discordBot": true,
         "openSource": true,
-        "clientWork": false
+        "saas": true,
+        "tool": false
       },
       "projectStartTimestamp": 1672743660
     },
@@ -232,8 +279,25 @@
         ]
       },
       "description": {
-        "short": "IsleStats is a Discord bot that provides a range of functionality relating to the popular Minecraft server, MCC Island.",
-        "long": "IsleStats builds on top of the Python PIL library and MCC Island's API to deliver a range of functionality, including game statistics, automatic role assignment, and more.\n\nThe IsleStats website allows users to manage their account settings as well as fine tune the bot's behaviour for each Discord server."
+        "short": "IsleStats is a Discord integration that provides a range of functionality relating to the popular Minecraft server, MCC Island.",
+        "long": [
+          {
+            "heading": "Overview",
+            "content": "IsleStats is a Discord integration that generates game stat cards for the popular Minecraft server, MCCI. It iterates upon the lessons I learnt while working on my other project, Statalytics, which has resulted in a more polished product. Inspired by earlier Statalytics rendering systems, it employs its own rendering wrapper around the Python Pillow library. IsleStats also has an easy to use web interface for managing both account and guild settings - this eliminates the friction and limitations of Discord's UI when managing complex settings. While the technical aspects of this project were primarily a solo endeavor, I worked closely with a friend who acted as a UX consultant so that the project could best serve its target audience."
+          },
+          {
+            "heading": "Real World Impact",
+            "content": "The primary motivator for starting this project was the release of MCCI's public API which created a vacuum that needed to be filled. With IsleStats being one of the earliest products on the market, it was widely adopted by Discord servers, having been added to ~1000 Discord servers and invoked ~200,000 times. With advanced features such as automatic role assignment, guilds become dependent on it and as such I have worked closely with feedback from guild owners in determining the direction the project should take."
+          },
+          {
+            "heading": "Tooling",
+            "content": "The decision to use Python for this project came from my own familiarity and the ecosystem around Discord integration and image manipulation. It was vital for the success of the product that a beta release be shipped early on, and using Python for this project made that possible. The website is built in Next.js and communicates with a FastAPI service, allowing the modularity and scalability of React with the convenience of a shared internal Python library for managing data.\n\nMongoDB was the database of choice not only because I wanted to familiarize myself with the technology, but also due to its flexibility in how data could be structured."
+          },
+          {
+            "heading": "Lessons",
+            "content": "Throughout the duration of this project, I became familiar with many new technologies - Next.js, FastAPI, MongoDB, GraphQL and Tailwind. I got hands on experience with integrating different technologies in a decoupled and maintainable manner. I faced challenges with product terminology throughout the development of this project and learnt the importance of creating concrete naming conventions before shipping features. Otherwise, naming will naturally evolve, leading to inconsistencies and confusion for end users. This project highlighted the importance of good documentation and tips throughout the product - things that seem obvious to the developer may not be so obvious to the end user."
+          }
+        ]
       },
       "demoUrl": "https://islestats.net",
       "sourceUrl": null,
@@ -243,7 +307,7 @@
         { "id": "fastapi", "allowFiltering": true },
         { "id": "nextjs", "allowFiltering": true },
         { "id": "mongodb", "allowFiltering": true },
-        { "id": "docker", "allowFiltering": true },
+        { "id": "docker", "allowFiltering": false },
         { "id": "discord", "allowFiltering": false }
       ],
       "relevance": 20,
@@ -252,7 +316,9 @@
         "fullStack": true,
         "discordBot": true,
         "openSource": false,
-        "clientWork": false
+        "saas": true,
+        "tool": false
+
       },
       "projectStartTimestamp": 1705748640
     },
@@ -270,8 +336,21 @@
         ]
       },
       "description": {
-        "short": "Enotify is a Discord bot that allows you to receive alerts for incoming emails directly in your Discord DMs.",
-        "long": "Enotify is designed to tackle a personal painpoint of mine - missing important emails. To solve this problem, enotify delivers notifications of new emails directly to a user's Discord DMs.\n\nThe web dashboard allows users to connect multiple email accounts, and apply specific filters on a per email account basis. Support currently only exists for Gmail.\n\nEnotify takes advantage of Google Cloud Pub / Sub and the Gmail API to deliver incoming email alerts in real time."
+        "short": "Enotify is a Discord integration that delivers alerts of new emails to a user's DMs within 10 seconds of receipt.",
+        "long": [
+          {
+            "heading": "Overview",
+            "content": "Enotify is a Discord integration that bridges the gap between Gmail and Discord, delivering alerts of new emails to a user's DMs within 10 seconds of receipt. Through the web dashboard, users can add multiple Gmail accounts and filter which emails they want to receive alerts for via whitelist and blacklist settings. This project was primarily built as a personal tool and due to obvious privacy concerns, I have created a guide to self-hosting Enotify entirely on isolated infrastructure."
+          },
+          {
+            "heading": "Tooling",
+            "content": "Enotify is built in Python and integrates with Google Cloud Pub/Sub to receive real time inbox updates without the need for continuous polling. There are three main components of this project. A web interface for managing connected email accounts and filters, a webhook for receiving and handling Google Cloud Pub/Sub events, and an inbox watch loop that re-validates credentials efficiently in batches. The web interface is able to indicate when credentials are invalid and an account must be re-authorized."
+          },
+          {
+            "heading": "Lessons",
+            "content": "Due to the sensitive nature of the data that Enotify must access, security was a large priority. This project provided my initial experiences with encryption, JWT validation, secure OAuth flows, and CSRF prevention. This project iterated on an initial prototype script that polled the Gmail API, and aimed to provide a more reliable and scalable experience. I was subjected to fragmented and inconsistent Google Cloud documentation and often had to fill in the gaps through trial and error.\n\nService to service communication is also a vital part of this project as the web server must notify the Discord integration service of new emails. This problem was solved with a bare-bones socket server system however if I were to redo this project, I would use something such as Redis streams or Redis Pub/Sub for increased flexibility and reliability."
+          }
+        ]
       },
       "demoUrl": "https://enotify.lucism.dev",
       "sourceUrl": "https://github.com/Luciism/enotify",
@@ -280,7 +359,7 @@
         { "id": "quart", "allowFiltering": true },
         { "id": "postgresql", "allowFiltering": true },
         { "id": "google_cloud", "allowFiltering": true },
-        { "id": "docker", "allowFiltering": true },
+        { "id": "docker", "allowFiltering": false },
         { "id": "discord", "allowFiltering": false }
       ],
       "relevance": 10,
@@ -289,7 +368,9 @@
         "fullStack": true,
         "discordBot": true,
         "openSource": true,
-        "clientWork": false
+        "saas": true,
+        "tool": false
+
       },
       "projectStartTimestamp": 1674731340
     }
