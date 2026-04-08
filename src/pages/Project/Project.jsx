@@ -75,14 +75,19 @@ const ProjectPage = ({project}) => {
           <h2>About</h2>
         </Heading>
         <div className="about-info headed-info">
-          <h3 className="subheading" data-aos="fade-in">Overview</h3>
-          <p
-            className="body-base color-text-secondary"
-            style={{ whiteSpace: "pre-line" }}
-            data-aos="fade-up"
-          >
-            {project.description.long}
-          </p>
+          {project.description.long.map(({heading, content}, i) => {
+            return (<>
+              <h3 className="subheading" data-aos="fade-in" key={i}>{heading}</h3>
+              <p
+                className="body-base color-text-secondary"
+                style={{ whiteSpace: "pre-line" }}
+                data-aos="fade-up"
+                key={i + 0.5}
+              >
+                {content}
+              </p>
+            </>);
+          })}
         </div>
         <div className="about-info headed-info">
           <h3 className="subheading" data-aos="fade-in">Tools Used</h3>

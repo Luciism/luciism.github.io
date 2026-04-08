@@ -127,6 +127,10 @@ h2 {
   display: flex;
   flex-direction: column;
   gap: 14px;
+
+  & h3:not(:first-child) {
+    margin-top: 30px;
+  }
 }
 
 /* Inputs */
