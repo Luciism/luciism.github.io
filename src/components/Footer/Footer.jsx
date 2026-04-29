@@ -62,7 +62,7 @@ const Footer = () => {
             {appData.emailAddress}
           </Link>
         </div>
-        <p className="body-base color-text">&copy; 2024 Lucism, Made with love.</p>
+        <p className="body-base color-text">&copy; {new Date().getFullYear()} Lucism, Made with love.</p>
       </div>
     </footer>
   );

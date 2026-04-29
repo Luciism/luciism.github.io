@@ -50,6 +50,12 @@
       "rgb": "240 219 79"
     },
     {
+      "id": "typescript",
+      "name": "TypeScript",
+      "icon": "/tech_icons/typescript.png",
+      "rgb": "0 122 204"
+    },
+    {
       "id": "html",
       "name": "HTML5",
       "icon": "/tech_icons/html.png",
@@ -146,7 +152,6 @@
       "rgb": "81 120 196"
     },
     {
-
       "id": "redis",
       "name": "Redis",
       "icon": "/tech_icons/redis.png",
@@ -188,7 +193,13 @@
     },
     {
       "name": "Frameworks",
-      "toolIDs": ["react", "nextjs", "fastapi", "python_flask", "quart"]
+      "toolIDs": [
+        "react",
+        "nextjs",
+        "fastapi",
+        "python_flask",
+        "quart"
+      ]
     },
     {
       "name": "Tools & Databases",
@@ -246,13 +257,34 @@
       "demoUrl": "https://statalytics.net",
       "sourceUrl": "https://statalytics.net/github",
       "tools": [
-        { "id": "python", "allowFiltering": true },
-        { "id": "python_pillow", "allowFiltering": true },
-        { "id": "quart", "allowFiltering": true },
-        { "id": "sqlite3", "allowFiltering": true },
-        { "id": "docker", "allowFiltering": false },
-        { "id": "discord", "allowFiltering": false },
-        { "id": "redis", "allowFiltering": true }
+        {
+          "id": "python",
+          "allowFiltering": true
+        },
+        {
+          "id": "python_pillow",
+          "allowFiltering": true
+        },
+        {
+          "id": "quart",
+          "allowFiltering": true
+        },
+        {
+          "id": "sqlite3",
+          "allowFiltering": true
+        },
+        {
+          "id": "docker",
+          "allowFiltering": false
+        },
+        {
+          "id": "discord",
+          "allowFiltering": false
+        },
+        {
+          "id": "redis",
+          "allowFiltering": true
+        }
       ],
       "relevance": 30,
       "properties": {
@@ -302,13 +334,34 @@
       "demoUrl": "https://islestats.net",
       "sourceUrl": null,
       "tools": [
-        { "id": "python", "allowFiltering": true },
-        { "id": "python_pillow", "allowFiltering": true },
-        { "id": "fastapi", "allowFiltering": true },
-        { "id": "nextjs", "allowFiltering": true },
-        { "id": "mongodb", "allowFiltering": true },
-        { "id": "docker", "allowFiltering": false },
-        { "id": "discord", "allowFiltering": false }
+        {
+          "id": "python",
+          "allowFiltering": true
+        },
+        {
+          "id": "python_pillow",
+          "allowFiltering": true
+        },
+        {
+          "id": "fastapi",
+          "allowFiltering": true
+        },
+        {
+          "id": "nextjs",
+          "allowFiltering": true
+        },
+        {
+          "id": "mongodb",
+          "allowFiltering": true
+        },
+        {
+          "id": "docker",
+          "allowFiltering": false
+        },
+        {
+          "id": "discord",
+          "allowFiltering": false
+        }
       ],
       "relevance": 20,
       "properties": {
@@ -318,7 +371,6 @@
         "openSource": false,
         "saas": true,
         "tool": false
-
       },
       "projectStartTimestamp": 1705748640
     },
@@ -355,12 +407,30 @@
       "demoUrl": "https://enotify.lucism.dev",
       "sourceUrl": "https://github.com/Luciism/enotify",
       "tools": [
-        { "id": "python", "allowFiltering": true },
-        { "id": "quart", "allowFiltering": true },
-        { "id": "postgresql", "allowFiltering": true },
-        { "id": "google_cloud", "allowFiltering": true },
-        { "id": "docker", "allowFiltering": false },
-        { "id": "discord", "allowFiltering": false }
+        {
+          "id": "python",
+          "allowFiltering": true
+        },
+        {
+          "id": "quart",
+          "allowFiltering": true
+        },
+        {
+          "id": "postgresql",
+          "allowFiltering": true
+        },
+        {
+          "id": "google_cloud",
+          "allowFiltering": true
+        },
+        {
+          "id": "docker",
+          "allowFiltering": false
+        },
+        {
+          "id": "discord",
+          "allowFiltering": false
+        }
       ],
       "relevance": 10,
       "properties": {
@@ -370,9 +440,69 @@
         "openSource": true,
         "saas": true,
         "tool": false
-
       },
       "projectStartTimestamp": 1674731340
+    },
+    {
+      "id": "fractyl",
+      "name": "Fractyl",
+      "images": {
+        "cover": "/project_images/fractyl/preview.png",
+        "background": "/project_images/fractyl/background.png",
+        "display": [
+          "/project_images/fractyl/1.png",
+          "/project_images/fractyl/2.png",
+          "/project_images/fractyl/3.png",
+          "/project_images/fractyl/4.png"
+        ]
+      },
+      "description": {
+        "short": "Fractyl is a pipeline for turning figma designs into SVG templates, exporting, and rendering them with actual data.",
+        "long": [
+          {
+            "heading": "Overview",
+            "content": "Fractyl is a templating pipeline for exporting Figma designs as SVG templates and dynamically rendering them with actual content on demand. It aims to solve the pain points I faced while developing my other rendering heavy projects (Statalytics, IsleStats), such as manually specifying pixel positions for text and images. Through the Figma plugin, users can mark elements as dynamic text, shapes, or images, assign an ID, and give them a value at render time. A design can be selected and exported, which splits the design into dynamic SVG fragments, rasterizes the static content, and generates a schema file that specifies the composition of the design. More advanced features include: masks for background clipping, scale variant exports, and variable exports. Because of such flexibility, the Fractyl rendering pipeline has many applications, including game stat cards, social media cards, receipts, and marketing assets."
+          },
+          {
+            "heading": "Renderer",
+            "content": "Rust was the optimal choice for the renderer due to its speed and support for SVG rendering via resvg. The renderer can either be used as a standalone HTTP server for requesting renders or called directly from other Rust code as a crate. It is designed to be as simple as possible to set up while still giving flexibility to advanced users. To render a template with actual values, the render method can be called with a mapping of placeholder IDs with their respective values."
+          },
+          {
+            "heading": "Lessons and Motivations",
+            "content": "The core philosophy behind this project is that the render call should be possible without any knowledge of the visual design aspects of the template. Fonts can be scaled with \"em\" units, dynamic colors can be specified with exported Figma variables (`{variable:x}`), and background images will be automatically scaled and applied. This limitation gave the project a clear direction and required creative thinking to solve unique problems.\n\nTo create a pipeline with as little friction as possible, it was critical that I iterated on conceptual ideas before implementation. I decided to use SVGs as templates as it serves as a middle-ground between headless browser rendering and tedious manual positioning, with Figma doing the heavy lifting in terms of positioning and alignment. The schema was carefully crafted with foresight to allow automatic migration between different versions sequentially. It is a crucial component as it bridges the gap between the two core domains: the Figma plugin and the renderer."
+          }
+        ]
+      },
+      "demoUrl": "https://www.figma.com/community/plugin/1592310405811714836/fractyl-ui",
+      "sourceUrl": "https://github.com/Luciism/fractyl-figma",
+      "tools": [
+        {
+          "id": "rust",
+          "allowFiltering": true
+        },
+        {
+          "id": "react",
+          "allowFiltering": true
+        },
+        {
+          "id": "typescript",
+          "allowFiltering": true
+        },
+        {
+          "id": "figma",
+          "allowFiltering": false
+        }
+      ],
+      "relevance": 25,
+      "properties": {
+        "webDevelopment": false,
+        "fullStack": false,
+        "discordBot": false,
+        "openSource": true,
+        "saas": false,
+        "tool": true
+      },
+      "projectStartTimestamp": 1768694400
     }
   ]
 }
