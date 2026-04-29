@@ -503,6 +503,71 @@
         "tool": true
       },
       "projectStartTimestamp": 1768694400
+    },
+    {
+      "id": "pulse",
+      "name": "Pulse",
+      "images": {
+        "cover": "/project_images/pulse/preview.png",
+        "background": "/project_images/pulse/background.png",
+        "display": [
+          "",
+          "/project_images/pulse/2.png",
+          "/project_images/pulse/1.png",
+          "/project_images/pulse/3.png"
+        ]
+      },
+      "description": {
+        "short": "Pulse is a self-contained realtime messaging platform for the web.",
+        "long": [
+          {
+            "heading": "Overview",
+            "content": "Pulse is a simple real-time messaging web app. While this project has working instant messaging functionality, the core focus of this project was to develop my skills in areas such as secure authentication, horizontally scalable systems, and real-time communication. Pulse allows users to create an account and chat with other users either privately or in group chats. Pulse is largely unfinished and was never intended to be used in the real world, however it was an extremely valuable learning experience for me."
+          },
+          {
+            "heading": "Architecture",
+            "content": "There are three main layers to Pulse: a PostgreSQL database wrapped by a REST API, an API layer, and the React front-end.\n\nThe database wrapper is built in Rust and designed to provide a stateless gateway for manipulating database entries in a predefined and consistent manner across services. It provides an additional layer of security as data can't be arbitrarily read and written - only a select few operations are permitted. A range of integration tests ensure that all operations behave as expected under different circumstances. The database wrapper has minimal validation as that is the responsibility of the database schema and API business logic and because the database wrapper is stateless, it can be easily horizontally scaled without issue.\n\nThe API layer is also built in Rust with functionality such as account creation and authentication using REST endpoints and messaging providing an additional websocket based interface. To make horizontal scaling possible, I used Redis Pub/Sub for fan-out on messaging events. This allows users in a single chat to be connected to separate API nodes and still receive messages in real-time. The API securely manages authentication by salting and hashing with Argon2, and storing AES 256 GCM encrypted email addresses alongside their HMAC-SHA256 hashes. I stored hashed email addresses because AES 256 GCM encryption is non deterministic. Hashing provides a deterministic output and allows querying email addresses without the need for decryption.\n\nPulse also implements a session management system from scratch, supporting multiple simultaneous sessions with limited lifetimes and the ability to be revoked. Session tokens are stored on the database in SHA256 hash form such that only the client knows the true value."
+          },
+          {
+            "heading": "Lessons",
+            "content": "While the RESTful database wrapper makes it trivial to manipulate data in a predefined, structured manner, it also adds complexity and latency. In future projects, I would instead create an internal Rust crate for database operations so that the API can directly connect to the database. This serves as a good middle-ground as it still wraps the complex database query logic. Because all of the server-side code for this project is in Rust, this would work well and decrease infrastructure cost. This would also eliminate the need for the shared 'models' crate that the database wrapper and API currently depend on as a single source of truth.\n\nWhile developing the database wrapper, I experienced the pain of writing comprehensive integration tests to ensure functionality behaved as expected. I was forced to build on top of Rust's existing testing framework and iterate to make tests less verbose and as easy to read as possible. This project gave me experience with more complex database schemas, unlike with past projects, with Pulse I ensured stricter types, defaults, and deletion policies to ensure data consistency and keep orphaned data to a minimum.\n\nWith websockets being a significant component of the API layer, I should have created better infrastructure around them so that defining handlers would become modular and more maintainable. This is one of the biggest issues with the API layer, and makes it difficult to decouple websocket logic from Redis fanout logic. A better approach would use a similar style to Axum's routing where handlers are defined independently and then registered in a single place in the core app."
+          }
+        ]
+      },
+      "demoUrl": null,
+      "sourceUrl": "https://github.com/pulsemessaging/",
+      "tools": [
+        {
+          "id": "rust",
+          "allowFiltering": true
+        },
+        {
+          "id": "react",
+          "allowFiltering": true
+        },
+        {
+          "id": "redis",
+          "allowFiltering": true
+        },
+        {
+          "id": "postgresql",
+          "allowFiltering": true
+        },
+        {
+          "id": "docker",
+          "allowFiltering": false
+        }
+      ],
+      "relevance": 35,
+      "properties": {
+        "webDevelopment": true,
+        "fullStack": true,
+        "discordBot": false,
+        "openSource": true,
+        "saas": false,
+        "tool": false 
+      },
+      "projectStartTimestamp": 1768694400
     }
   ]
 }
